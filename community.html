@@ -1,0 +1,2313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Community Empowerment | Charity Aid YCO</title>
+
+<meta name="description" content="Discover how Charity Aid YCO empowers communities through merry-go-round savings, chamas, education, mentorship, mutual support and charitable giving.">
+
+<style>
+
+/* =====================================
+   GENERAL SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263449;
+    line-height: 1.7;
+    background: #ffffff;
+}
+
+:root {
+    --green: #34A853;
+    --navy: #003B75;
+    --dark: #06264E;
+    --light: #F3F7FC;
+    --gold: #DAA520;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.site-header {
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    width: 92%;
+    max-width: 1300px;
+    margin: auto;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 21px;
+    color: var(--dark);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.brand-name span {
+    color: var(--green);
+}
+
+.brand-name small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #68768a;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: #24364b;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--green);
+}
+
+.main-nav .nav-donate {
+    background: var(--green);
+    color: white;
+    padding: 11px 23px;
+    border-radius: 5px;
+}
+
+.main-nav .nav-donate:hover {
+    background: var(--navy);
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    background: var(--navy);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.community-hero {
+    min-height: 540px;
+    background:
+    linear-gradient(90deg,
+    rgba(3,28,58,.91),
+    rgba(3,45,75,.62),
+    rgba(0,0,0,.15)),
+    url("https://adrakenya.org/assets/IMG_9196-scaled.jpg")
+    center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 90px 0;
+}
+
+.hero-label {
+    display: inline-block;
+    background: rgba(52,168,83,.2);
+    border-left: 4px solid var(--green);
+    padding: 8px 15px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+    font-weight: 800;
+}
+
+.hero-content h1 span {
+    color: #65D681;
+}
+
+.hero-content p {
+    font-size: 17px;
+    color: #edf4fa;
+    max-width: 680px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 27px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-green {
+    background: var(--green);
+    color: white;
+}
+
+.btn-green:hover {
+    background: #238b40;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--navy);
+}
+
+/* =====================================
+   INTRODUCTION
+===================================== */
+
+.community-intro {
+    padding: 85px 0;
+    text-align: center;
+    background: white;
+}
+
+.section-label {
+    color: var(--green);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.section-heading {
+    font-size: 34px;
+    color: var(--navy);
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: auto;
+    color: #68768a;
+    font-size: 16px;
+}
+
+/* =====================================
+   COMMUNITY ACTIVITIES
+===================================== */
+
+.community-activities {
+    padding: 80px 0;
+    background: var(--light);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 27px;
+}
+
+.activity-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 22px rgba(0,0,0,.06);
+    transition: .3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+.activity-card img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    display: block;
+}
+
+.activity-content {
+    padding: 25px;
+}
+
+.activity-number {
+    display: inline-block;
+    background: #eaf7ed;
+    color: var(--green);
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.activity-content h3 {
+    color: var(--navy);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.activity-content p {
+    color: #68768a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* =====================================
+   SAVINGS AND CHAMA SECTION
+===================================== */
+
+.savings-section {
+    padding: 85px 0;
+    background: white;
+}
+
+.savings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.savings-image img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.savings-content h2 {
+    color: var(--navy);
+    font-size: 33px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.savings-content > p {
+    color: #68768a;
+    margin-bottom: 20px;
+}
+
+.saving-option {
+    display: flex;
+    gap: 15px;
+    margin: 22px 0;
+    align-items: flex-start;
+}
+
+.saving-icon {
+    background: #eaf7ed;
+    color: var(--green);
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.saving-option h3 {
+    color: var(--navy);
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.saving-option p {
+    color: #68768a;
+    font-size: 14px;
+}
+
+.savings-note {
+    background: #fff8e7;
+    border-left: 4px solid var(--gold);
+    padding: 15px;
+    color: #5e5439;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* =====================================
+   EDUCATION AND MENTORSHIP
+===================================== */
+
+.learning-section {
+    padding: 80px 0;
+    background: #f3f7fc;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.learning-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.learning-content h2 {
+    color: var(--navy);
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.learning-content p {
+    color: #68768a;
+    margin-bottom: 20px;
+}
+
+.learning-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.learning-list li {
+    margin-bottom: 13px;
+    color: #35465b;
+    font-size: 15px;
+}
+
+.learning-list li::before {
+    content: "✓";
+    background: var(--green);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/* =====================================
+   COMMUNITY SOLIDARITY
+===================================== */
+
+.solidarity-section {
+    padding: 85px 0;
+    background: white;
+}
+
+.solidarity-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.solidarity-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.solidarity-text h2 {
+    color: var(--navy);
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.solidarity-text p {
+    color: #68768a;
+    margin-bottom: 18px;
+}
+
+/* =====================================
+   CHOOSE HOW TO PARTICIPATE
+===================================== */
+
+.participate-section {
+    padding: 85px 0;
+    background: linear-gradient(135deg,#06264E,#004982);
+    color: white;
+}
+
+.participate-section .section-heading {
+    color: white;
+}
+
+.participate-section .section-description {
+    color: #d8e6f3;
+}
+
+.participate-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.participate-card {
+    background: white;
+    color: #263449;
+    padding: 35px;
+    border-radius: 12px;
+    border-bottom: 5px solid var(--green);
+}
+
+.participate-card.donation {
+    border-bottom-color: var(--gold);
+}
+
+.participate-card .big-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.participate-card h3 {
+    color: var(--navy);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.participate-card p {
+    color: #68768a;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.participate-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.participate-card li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #405168;
+}
+
+.participate-card li::before {
+    content: "✓";
+    color: var(--green);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* =====================================
+   COMMUNITY VALUES
+===================================== */
+
+.values-section {
+    padding: 75px 0;
+    background: #f5f8fc;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.value-item {
+    text-align: center;
+    padding: 25px 15px;
+    background: white;
+    border-radius: 10px;
+}
+
+.value-item span {
+    font-size: 35px;
+}
+
+.value-item h3 {
+    color: var(--navy);
+    font-size: 17px;
+    margin: 12px 0 8px;
+}
+
+.value-item p {
+    font-size: 13px;
+    color: #68768a;
+}
+
+/* =====================================
+   INQUIRY FORM
+===================================== */
+
+.inquiry-section {
+    padding: 85px 0;
+    background: white;
+}
+
+.inquiry-grid {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.inquiry-info {
+    background: var(--navy);
+    color: white;
+    padding: 38px;
+    border-radius: 12px;
+}
+
+.inquiry-info h2 {
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.inquiry-info p {
+    color: #d8e6f3;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.inquiry-info a {
+    color: #78df91;
+}
+
+.inquiry-form {
+    padding: 35px;
+    background: #f7f9fc;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.06);
+}
+
+.inquiry-form h2 {
+    color: var(--navy);
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.inquiry-form > p {
+    color: #68768a;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #30445c;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d6deea;
+    border-radius: 6px;
+    background: white;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--green);
+}
+
+.form-group textarea {
+    height: 125px;
+    resize: vertical;
+}
+
+.form-submit {
+    width: 100%;
+    border: none;
+    background: var(--green);
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-submit:hover {
+    background: var(--navy);
+}
+
+.form-notice {
+    font-size: 12px;
+    color: #68768a;
+    margin-top: 12px;
+}
+
+/* =====================================
+   FINAL CALL TO ACTION
+===================================== */
+
+.final-cta {
+    padding: 65px 20px;
+    text-align: center;
+    background: linear-gradient(120deg,#34A853,#087d57);
+    color: white;
+}
+
+.final-cta h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.final-cta p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #effff2;
+}
+
+.final-cta .btn {
+    background: white;
+    color: var(--navy);
+}
+
+/* =========================================
+   CHARITY AID YCO STANDARD FOOTER
+========================================= */
+
+.cayco-footer {
+    color: white;
+    background: #06264E;
+    border-top: 5px solid #34A853;
+    font-family: Arial, sans-serif;
+}
+
+.cayco-footer-main {
+    background: linear-gradient(120deg,#061D3C,#003B75);
+    padding: 55px 0 45px;
+}
+
+.cayco-footer-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1.3fr;
+    gap: 35px;
+}
+
+.cayco-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cayco-brand img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.cayco-brand h2 {
+    font-size: 23px;
+    color: white;
+}
+
+.cayco-brand h2 span {
+    color: var(--green);
+}
+
+.cayco-footer-about p,
+.cayco-footer-column p {
+    color: #d5e1ef;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.cayco-footer-column h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 22px;
+    padding-left: 12px;
+    border-left: 4px solid var(--green);
+}
+
+.cayco-footer-links {
+    list-style: none;
+}
+
+.cayco-footer-links li {
+    margin-bottom: 12px;
+}
+
+.cayco-footer-links a {
+    color: #d5e1ef;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.cayco-footer-links a:hover {
+    color: var(--green);
+    padding-left: 4px;
+}
+
+.cayco-footer-links a::before {
+    content: "›";
+    color: var(--green);
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.cayco-contact-item {
+    margin-bottom: 14px;
+    color: #d5e1ef;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.cayco-contact-item a {
+    color: #d5e1ef;
+}
+
+.cayco-social-title {
+    margin: 22px 0 12px;
+    font-size: 14px;
+}
+
+.cayco-socials {
+    display: flex;
+    gap: 9px;
+}
+
+.cayco-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #174E85;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cayco-socials a:hover {
+    background: var(--green);
+}
+
+.cayco-support-btn {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    padding: 10px 17px;
+    border-radius: 5px;
+    margin-top: 18px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cayco-footer-bottom {
+    background: #04172F;
+    padding: 20px 0;
+    border-top: 1px solid #30415b;
+}
+
+.cayco-footer-bottom-inner {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cayco-footer-bottom p {
+    color: #c5d2e2;
+    font-size: 12px;
+}
+
+.cayco-footer-motto {
+    color: white !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media(max-width: 1000px) {
+
+    .main-nav {
+        gap: 13px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .activity-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cayco-footer-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width: 750px) {
+
+    .header-inner {
+        min-height: 75px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    }
+
+    .main-nav.show {
+        display: flex;
+    }
+
+    .main-nav a {
+        padding: 12px;
+        border-bottom: 1px solid #edf0f4;
+        font-size: 14px;
+    }
+
+    .main-nav .nav-donate {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .community-hero {
+        min-height: 490px;
+    }
+
+    .savings-grid,
+    .learning-grid,
+    .solidarity-content,
+    .inquiry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .participate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width: 550px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .brand img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .brand-name {
+        font-size: 17px;
+    }
+
+    .hero-content h1 {
+        font-size: 37px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .section-heading {
+        font-size: 27px;
+    }
+
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-card img {
+        height: 220px;
+    }
+
+    .savings-image img,
+    .learning-image img,
+    .solidarity-image img {
+        height: 270px;
+    }
+
+    .savings-content h2,
+    .learning-content h2,
+    .solidarity-text h2 {
+        font-size: 26px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .inquiry-form,
+    .inquiry-info {
+        padding: 23px;
+    }
+
+    .final-cta h2 {
+        font-size: 27px;
+    }
+
+    .cayco-footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cayco-footer-bottom-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="index.html" class="brand">
+
+            <img src="logo.png" alt="Charity Aid YCO">
+
+            <div class="brand-name">
+                Charity Aid <span>YCO</span>
+                <small>EMPOWERING COMMUNITIES</small>
+            </div>
+
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="Home.html">About Us</a>
+
+            <a href="Programs.html">Programs</a>
+
+            <a href="Community.html" class="active">Community</a>
+
+            <a href="Contact.html">Contact</a>
+
+            <a href="donate.html" class="nav-donate">Donate</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="community-hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                Community Empowerment
+            </div>
+
+            <h1>
+                Stronger Communities,
+                <span>Brighter Futures.</span>
+            </h1>
+
+            <p>
+                Building a community where people come together
+                to save, learn, share, mentor and support one another.
+                Through collective action, we create opportunities,
+                strengthen relationships and build a culture of
+                dignity, inclusion and shared prosperity.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#community-activities"
+                   class="btn btn-green">
+                    Explore Our Community
+                </a>
+
+                <a href="#get-involved"
+                   class="btn btn-outline">
+                    Get Involved
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     INTRODUCTION
+===================================== -->
+
+<section class="community-intro">
+
+    <div class="container">
+
+        <div class="section-label">
+            Together We Grow
+        </div>
+
+        <h2 class="section-heading">
+            A Community Built on Unity, Opportunity and Support
+        </h2>
+
+        <p class="section-description">
+
+            At Charity Aid YCO, we believe lasting development
+            begins when people come together. We encourage
+            communities to organise, save collectively, exchange
+            knowledge, develop skills, mentor one another and
+            support families facing challenges.
+
+            Our vision is to nurture connected, resilient and
+            self-reliant communities where everyone has an
+            opportunity to participate and thrive.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     COMMUNITY ACTIVITIES
+===================================== -->
+
+<section class="community-activities"
+         id="community-activities">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                What We Encourage
+            </div>
+
+            <h2 class="section-heading">
+                Growing Together Through Community Action
+            </h2>
+
+            <p class="section-description">
+                Six interconnected approaches that help build
+                stronger, more inclusive and self-reliant communities.
+            </p>
+
+        </div>
+
+
+        <div class="activity-grid">
+
+
+            <!-- SAVINGS -->
+            <div class="activity-card">
+
+                <img
+                src="https://adrakenya.org/assets/IMG_9196-scaled.jpg"
+                alt="Community members participating in a group savings meeting">
+
+                <div class="activity-content">
+
+                    <span class="activity-number">01 · Financial Inclusion</span>
+
+                    <h3>Merry-Go-Round & Savings</h3>
+
+                    <p>
+                        Encourage members to contribute regularly,
+                        take turns receiving pooled contributions
+                        and develop a culture of saving.
+                        These groups help members plan for
+                        household needs, emergencies and future goals.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHAMA -->
+            <div class="activity-card">
+
+                <img
+                src="https://sportal365images.com/process/smp-images-production/pulselive.co.ke/02052025/30c468f4-1b91-4849-95cd-1b41db8e0cff.webp?operations=autocrop%28700%3A467%29"
+                alt="Women participating in a community chama meeting">
+
+                <div class="activity-content">
+
+                    <span class="activity-number">02 · Collective Growth</span>
+
+                    <h3>Chamas & Table Banking</h3>
+
+                    <p>
+                        Promote organised community groups where
+                        members pool resources, build financial
+                        discipline, explore investments and
+                        support one another's economic aspirations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+            <div class="activity-card">
+
+                <img
+                src="https://images.squarespace-cdn.com/content/v1/5829bc80d2b8570fc6232dd5/1706885611799-UUO1N4K1AL6TH6AD4C7Q/EFAC-NABU%2Bblog%2Bimage.jpg?format=1000w"
+                alt="Mentor supporting children during a community learning session">
+
+                <div class="activity-content">
+
+                    <span class="activity-number">03 · Lifelong Learning</span>
+
+                    <h3>Education & Knowledge Sharing</h3>
+
+                    <p>
+                        Create opportunities for community
+                        members to learn through awareness
+                        sessions, financial literacy, life skills,
+                        educational support and knowledge exchange.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENTORSHIP -->
+            <div class="activity-card">
+
+                <img
+                src="https://www.vso.ie/sites/ie/files/styles/600x400/public/2024-06/Kenya%20Education%20for%20Life%20Peter%20and%20Florence%20RS69037%20Feb%202020.jpg?h=4997dc06&itok=H7sxBJNK"
+                alt="Community volunteers mentoring young learners">
+
+                <div class="activity-content">
+
+                    <span class="activity-number">04 · Personal Development</span>
+
+                    <h3>Mentorship & Leadership</h3>
+
+                    <p>
+                        Connect experienced community members,
+                        professionals and volunteers with young
+                        people and emerging leaders to share
+                        experience, guidance, skills and inspiration.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- MUTUAL SUPPORT -->
+            <div class="activity-card">
+
+                <img
+                src="https://www.mercifulgracioushands.org/assets/services-support-CA0ys1_j.jpg"
+                alt="Volunteers supporting families with essential supplies">
+
+                <div class="activity-content">
+
+                    <span class="activity-number">05 · Social Solidarity</span>
+
+                    <h3>Mutual Support & Solidarity</h3>
+
+                    <p>
+                        Encourage neighbours and community groups
+                        to stand together during difficult times,
+                        support vulnerable households and
+                        strengthen a culture of compassion.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HARMONY -->
+            <div class="activity-card">
+
+                <img
+                src="https://kenya.mamaibado.org/cdn/shop/files/Hero_image-min.jpg?v=1758819405&width=2000"
+                alt="Community outreach and engagement with families">
+
+                <div class="activity-content">
+
+                    <span class="activity-number">06 · Peace & Inclusion</span>
+
+                    <h3>Harmony, Inclusion & Togetherness</h3>
+
+                    <p>
+                        Promote peaceful coexistence, respect,
+                        equality, dialogue and inclusion.
+                        Build communities where people value
+                        diversity and work together for the common good.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     SAVINGS AND CHAMA EXPLAINED
+===================================== -->
+
+<section class="savings-section">
+
+    <div class="container">
+
+        <div class="savings-grid">
+
+            <div class="savings-image">
+
+                <img
+                src="https://adrakenya.org/assets/IMG_9196-scaled.jpg"
+                alt="Community savings group sharing financial contributions">
+
+            </div>
+
+
+            <div class="savings-content">
+
+                <div class="section-label">
+                    Financial Empowerment
+                </div>
+
+                <h2>
+                    Saving Together. Growing Together.
+                </h2>
+
+                <p>
+                    Small contributions, when organised
+                    collectively, can create opportunities
+                    for individuals, families and communities.
+                    We encourage responsible community
+                    savings initiatives built on trust,
+                    transparency and shared responsibility.
+                </p>
+
+
+                <div class="saving-option">
+
+                    <div class="saving-icon">↻</div>
+
+                    <div>
+                        <h3>Merry-Go-Round</h3>
+
+                        <p>
+                            Members contribute an agreed amount
+                            at regular intervals, with the pooled
+                            amount rotating among members according
+                            to an agreed schedule.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="saving-option">
+
+                    <div class="saving-icon">♧</div>
+
+                    <div>
+                        <h3>Chama & Table Banking</h3>
+
+                        <p>
+                            Members pool their savings to build
+                            collective financial strength, access
+                            agreed group lending arrangements
+                            and pursue shared investment goals.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="saving-option">
+
+                    <div class="saving-icon">✓</div>
+
+                    <div>
+                        <h3>Financial Literacy</h3>
+
+                        <p>
+                            Promote budgeting, responsible borrowing,
+                            record keeping, financial planning
+                            and accountable group leadership.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="savings-note">
+                    <strong>Important:</strong>
+                    Community savings belong to participating
+                    members and are managed according to their
+                    agreed group rules. They are separate from
+                    charitable donations to Charity Aid YCO.
+                </div>
+
+                <br>
+
+                <a href="#inquiry"
+                   class="btn btn-green">
+                    Express Interest in Joining
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     EDUCATION AND MENTORSHIP
+===================================== -->
+
+<section class="learning-section">
+
+    <div class="container">
+
+        <div class="learning-grid">
+
+            <div class="learning-content">
+
+                <div class="section-label">
+                    Knowledge Is Power
+                </div>
+
+                <h2>
+                    Learn, Mentor and Inspire the Next Generation
+                </h2>
+
+                <p>
+                    A thriving community is one where knowledge
+                    is shared and everyone has an opportunity
+                    to grow. We encourage individuals to become
+                    lifelong learners, mentors and positive
+                    contributors to society.
+                </p>
+
+                <ul class="learning-list">
+
+                    <li>Community learning and awareness sessions</li>
+
+                    <li>Financial literacy and entrepreneurship education</li>
+
+                    <li>Youth mentorship and career guidance</li>
+
+                    <li>Leadership and personal development</li>
+
+                    <li>Digital skills and knowledge sharing</li>
+
+                    <li>Intergenerational learning and experience sharing</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="learning-image">
+
+                <img
+                src="https://www.vso.ie/sites/ie/files/styles/600x400/public/2024-06/Kenya%20Education%20for%20Life%20Peter%20and%20Florence%20RS69037%20Feb%202020.jpg?h=4997dc06&itok=H7sxBJNK"
+                alt="Volunteers providing educational mentorship">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     MUTUAL SUPPORT AND HARMONY
+===================================== -->
+
+<section class="solidarity-section">
+
+    <div class="container">
+
+        <div class="solidarity-content">
+
+            <div class="solidarity-image">
+
+                <img
+                src="https://www.mercifulgracioushands.org/assets/services-support-CA0ys1_j.jpg"
+                alt="Community members coming together to support vulnerable families">
+
+            </div>
+
+
+            <div class="solidarity-text">
+
+                <div class="section-label">
+                    United in Humanity
+                </div>
+
+                <h2>
+                    Together We Are Stronger
+                </h2>
+
+                <p>
+                    Communities thrive when people care for
+                    one another. We encourage a culture where
+                    neighbours become partners in progress,
+                    families support one another and individuals
+                    are valued regardless of their background
+                    or circumstances.
+                </p>
+
+                <p>
+                    Through shared responsibility, dialogue,
+                    volunteerism and compassion, we can create
+                    peaceful, inclusive and supportive communities
+                    where everyone belongs.
+                </p>
+
+                <a href="#inquiry"
+                   class="btn btn-green">
+                    Become a Community Supporter
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     SAVINGS OR CHARITABLE DONATION
+===================================== -->
+
+<section class="participate-section"
+         id="get-involved">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label" style="color:#8FE5A5;">
+                Be Part of the Change
+            </div>
+
+            <h2 class="section-heading">
+                Choose How You Want to Make a Difference
+            </h2>
+
+            <p class="section-description">
+                Whether you want to build financial security
+                with others or support vulnerable communities,
+                there is a meaningful way to participate.
+            </p>
+
+        </div>
+
+
+        <div class="participate-grid">
+
+
+            <!-- COMMUNITY SAVINGS -->
+            <div class="participate-card">
+
+                <div class="big-icon">🤝</div>
+
+                <h3>Join a Community Savings Initiative</h3>
+
+                <p>
+                    Interested in saving together, joining a
+                    merry-go-round, starting a chama or learning
+                    about table banking? Express your interest
+                    and connect with us.
+                </p>
+
+                <ul>
+
+                    <li>Participate in group savings initiatives</li>
+
+                    <li>Explore merry-go-round arrangements</li>
+
+                    <li>Learn about chamas and table banking</li>
+
+                    <li>Build financial knowledge and discipline</li>
+
+                </ul>
+
+                <a href="#inquiry"
+                   class="btn btn-green">
+                    Express Savings Interest
+                </a>
+
+            </div>
+
+
+            <!-- CHARITABLE DONATION -->
+            <div class="participate-card donation">
+
+                <div class="big-icon">💚</div>
+
+                <h3>Make a Charitable Donation</h3>
+
+                <p>
+                    Your voluntary contribution supports
+                    Charity Aid YCO's humanitarian and
+                    community development programmes,
+                    helping individuals and families
+                    access opportunities and essential support.
+                </p>
+
+                <ul>
+
+                    <li>Support education and vulnerable children</li>
+
+                    <li>Promote health and wellbeing</li>
+
+                    <li>Support persons with disabilities</li>
+
+                    <li>Strengthen community development initiatives</li>
+
+                </ul>
+
+                <a href="donate.html"
+                   class="btn btn-green">
+                    Donate to Charity Aid YCO
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     COMMUNITY VALUES
+===================================== -->
+
+<section class="values-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Our Shared Values
+            </div>
+
+            <h2 class="section-heading">
+                The Foundation of a Strong Community
+            </h2>
+
+            <p class="section-description">
+                We believe lasting community development
+                is built on values that bring people together.
+            </p>
+
+        </div>
+
+
+        <div class="values-grid">
+
+            <div class="value-item">
+                <span>🤝</span>
+                <h3>Unity</h3>
+                <p>Working together towards shared goals.</p>
+            </div>
+
+            <div class="value-item">
+                <span>❤️</span>
+                <h3>Compassion</h3>
+                <p>Caring for others and supporting those in need.</p>
+            </div>
+
+            <div class="value-item">
+                <span>⚖️</span>
+                <h3>Equality</h3>
+                <p>Respecting dignity and equal opportunities.</p>
+            </div>
+
+            <div class="value-item">
+                <span>🌱</span>
+                <h3>Self-Reliance</h3>
+                <p>Building skills, resilience and independence.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     COMMUNITY INQUIRY FORM
+===================================== -->
+
+<section class="inquiry-section" id="inquiry">
+
+    <div class="container">
+
+        <div class="inquiry-grid">
+
+
+            <div class="inquiry-info">
+
+                <div class="section-label"
+                     style="color:#8FE5A5;">
+                    Connect With Us
+                </div>
+
+                <h2>
+                    Let's Build Stronger Communities Together
+                </h2>
+
+                <p>
+                    Would you like to join a savings group,
+                    participate in a learning activity,
+                    become a mentor, volunteer or support
+                    our community programmes?
+                </p>
+
+                <p>
+                    Send us your enquiry. Our team would be
+                    happy to hear from you and explore
+                    opportunities for collaboration.
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:charityaidyco@gmail.com">
+                        charityaidyco@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    Kenya
+                </p>
+
+            </div>
+
+
+            <div class="inquiry-form">
+
+                <h2>Community Participation Enquiry</h2>
+
+                <p>
+                    Complete the form below and tell us
+                    how you would like to participate.
+                </p>
+
+
+                <form id="communityForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name *
+                            </label>
+
+                            <input type="text"
+                                   id="fullName"
+                                   name="fullName"
+                                   placeholder="Enter your name"
+                                   required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address *
+                            </label>
+
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="Your email address"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input type="tel"
+                                   id="phone"
+                                   name="phone"
+                                   placeholder="+254">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="location">
+                                County / Location
+                            </label>
+
+                            <input type="text"
+                                   id="location"
+                                   name="location"
+                                   placeholder="Your location">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="interest">
+                            How Would You Like to Participate? *
+                        </label>
+
+                        <select id="interest"
+                                name="interest"
+                                required>
+
+                            <option value="">
+                                Select your interest
+                            </option>
+
+                            <option value="Merry-Go-Round and Savings">
+                                Merry-Go-Round and Savings
+                            </option>
+
+                            <option value="Chama and Table Banking">
+                                Chama and Table Banking
+                            </option>
+
+                            <option value="Education and Learning">
+                                Education and Learning
+                            </option>
+
+                            <option value="Mentorship and Leadership">
+                                Mentorship and Leadership
+                            </option>
+
+                            <option value="Volunteering">
+                                Volunteering
+                            </option>
+
+                            <option value="Community Support">
+                                Community Support
+                            </option>
+
+                            <option value="Charitable Donation">
+                                Charitable Donation
+                            </option>
+
+                            <option value="Partnership">
+                                Partnership
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Your Message *
+                        </label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  placeholder="Tell us more about your interest..."
+                                  required></textarea>
+
+                    </div>
+
+
+                    <button type="submit"
+                            class="form-submit">
+
+                        Submit Community Enquiry →
+
+                    </button>
+
+                    <p class="form-notice">
+                        Your information will be used to
+                        respond to your enquiry.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     FINAL CALL TO ACTION
+===================================== -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <h2>
+            Together, We Can Build a Better Tomorrow.
+        </h2>
+
+        <p>
+            Every contribution, every shared skill,
+            every act of kindness and every person
+            who participates helps create a stronger,
+            more inclusive and self-reliant community.
+        </p>
+
+        <a href="Contact.html" class="btn">
+            Connect With Charity Aid YCO →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     STANDARD FOOTER
+===================================== -->
+
+<footer class="cayco-footer">
+
+    <div class="cayco-footer-main">
+
+        <div class="cayco-footer-container">
+
+
+            <!-- ABOUT -->
+            <div class="cayco-footer-about">
+
+                <a href="index.html" class="cayco-brand">
+
+                    <img src="logo.png"
+                         alt="Charity Aid YCO Logo">
+
+                    <h2>
+                        Charity Aid <span>YCO</span>
+                    </h2>
+
+                </a>
+
+                <p>
+                    Empowering Communities, Transforming Lives
+                    through sustainable development, social justice,
+                    education, health, environmental stewardship
+                    and economic empowerment.
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="cayco-footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul class="cayco-footer-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="Home.html">About Us</a></li>
+
+                    <li><a href="Programs.html">Our Programs</a></li>
+
+                    <li><a href="Community.html">Community</a></li>
+
+                    <li><a href="Contact.html">Contact Us</a></li>
+
+                    <li><a href="donate.html">Donate</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- FOCUS AREAS -->
+            <div class="cayco-footer-column">
+
+                <h3>Our Focus Areas</h3>
+
+                <ul class="cayco-footer-links">
+
+                    <li><a href="Programs.html">Economic Empowerment</a></li>
+
+                    <li><a href="Programs.html">Education Support</a></li>
+
+                    <li><a href="Programs.html">Health & Wellbeing</a></li>
+
+                    <li><a href="Programs.html">Environmental Sustainability</a></li>
+
+                    <li><a href="Programs.html">Humanitarian Assistance</a></li>
+
+                    <li><a href="Programs.html">Social Justice & Inclusion</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="cayco-footer-column">
+
+                <h3>Contact Information</h3>
+
+                <div class="cayco-contact-item">
+                    📍 Kenya
+                </div>
+
+                <div class="cayco-contact-item">
+                    ✉
+                    <a href="mailto:charityaidyco@gmail.com">
+                        charityaidyco@gmail.com
+                    </a>
+                </div>
+
+                <div class="cayco-contact-item">
+                    ☎
+                    <a href="tel:+254104380231">
+                        +254 104 380 231
+                    </a>
+                </div>
+
+                <h4 class="cayco-social-title">
+                    Follow Us
+                </h4>
+
+                <div class="cayco-socials">
+
+                    <a href="#" aria-label="Facebook">f</a>
+
+                    <a href="#" aria-label="LinkedIn">in</a>
+
+                    <a href="#" aria-label="Instagram">◎</a>
+
+                    <a href="#" aria-label="X">𝕏</a>
+
+                </div>
+
+                <a href="donate.html"
+                   class="cayco-support-btn">
+                    Support Our Mission →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="cayco-footer-bottom">
+
+        <div class="cayco-footer-bottom-inner">
+
+            <p>
+                © <span id="caycoYear">2027</span>
+                Charity Aid YCO. All Rights Reserved.
+            </p>
+
+            <p class="cayco-footer-motto">
+                Empowering Communities, Transforming Lives.
+            </p>
+
+            <p>
+                Building Hope. Creating Opportunities.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+// MOBILE NAVIGATION
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+menuToggle.addEventListener("click", function() {
+
+    mainNav.classList.toggle("show");
+
+    const expanded = mainNav.classList.contains("show");
+
+    menuToggle.setAttribute("aria-expanded", expanded);
+
+    menuToggle.innerHTML = expanded ? "&times;" : "☰";
+
+});
+
+
+// COPYRIGHT YEAR
+
+document.getElementById("caycoYear").textContent =
+    new Date().getFullYear();
+
+
+// COMMUNITY ENQUIRY FORM
+
+document.getElementById("communityForm").addEventListener("submit",
+function(event) {
+
+    event.preventDefault();
+
+    const fullName =
+        document.getElementById("fullName").value.trim();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    const phone =
+        document.getElementById("phone").value.trim();
+
+    const location =
+        document.getElementById("location").value.trim();
+
+    const interest =
+        document.getElementById("interest").value;
+
+    const message =
+        document.getElementById("message").value.trim();
+
+
+    const subject = encodeURIComponent(
+        "Community Participation Enquiry - " + interest
+    );
+
+    const body = encodeURIComponent(
+
+        "COMMUNITY PARTICIPATION ENQUIRY\n\n" +
+
+        "Full Name: " + fullName + "\n" +
+
+        "Email: " + email + "\n" +
+
+        "Phone: " + phone + "\n" +
+
+        "Location: " + location + "\n" +
+
+        "Area of Interest: " + interest + "\n\n" +
+
+        "Message:\n" + message
+
+    );
+
+
+    const mailtoLink =
+        "mailto:charityaidyco@gmail.com" +
+        "?subject=" + subject +
+        "&body=" + body;
+
+
+    window.location.href = mailtoLink;
+
+});
+
+</script>
+
+</body>
+</html>
