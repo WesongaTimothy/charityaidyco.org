@@ -1,0 +1,844 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Donate | Charity Aid YCO</title>
+
+<meta name="description" content="Support Charity Aid YCO through financial and in-kind donations. Help orphans, vulnerable children, persons with disabilities and disadvantaged families.">
+
+<style>
+:root {
+    --blue: #003B8E;
+    --green: #34A853;
+    --dark: #172B4D;
+    --light: #F4F8FC;
+    --white: #FFFFFF;
+    --gold: #F4B400;
+    --text: #566477;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    line-height: 1.7;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 420px;
+    background:
+    linear-gradient(90deg, rgba(0,35,85,.94), rgba(0,59,142,.72)),
+    url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1800&q=85');
+
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #f1f5fa;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-green {
+    background: var(--green);
+    color: white;
+}
+
+.btn-green:hover {
+    background: #25863F;
+    transform: translateY(-2px);
+}
+
+.btn-white {
+    background: white;
+    color: var(--blue);
+}
+
+/* DONATION BANNER */
+
+.donation-banner {
+    background: linear-gradient(120deg, var(--green), var(--blue));
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.donation-banner h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.payment-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.payment-item {
+    background: rgba(255,255,255,.15);
+    padding: 15px 35px;
+    border-radius: 8px;
+    min-width: 230px;
+}
+
+.payment-item span {
+    display: block;
+    font-size: 14px;
+}
+
+.payment-item strong {
+    font-size: 29px;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 75px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--blue);
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.section-desc {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    color: var(--text);
+}
+
+/* M-PESA */
+
+.mpesa-section {
+    background: var(--light);
+}
+
+.mpesa-card {
+    background: white;
+    max-width: 850px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.07);
+}
+
+.mpesa-card h3 {
+    color: var(--blue);
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.mpesa-number {
+    background: #F2FAF4;
+    border-left: 5px solid var(--green);
+    padding: 25px;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.mpesa-number .number {
+    color: var(--green);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.mpesa-number .account {
+    color: var(--blue);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.mpesa-card ol {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+.mpesa-card li {
+    padding: 5px 0;
+}
+
+.notice {
+    background: #FFF8E1;
+    padding: 18px;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+
+/* IN-KIND DONATIONS */
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.donation-card {
+    padding: 30px 25px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e8edf3;
+    box-shadow: 0 4px 15px rgba(0,0,0,.045);
+    transition: .3s;
+}
+
+.donation-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,.10);
+    border-bottom: 4px solid var(--green);
+}
+
+.donation-card .icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.donation-card h3 {
+    color: var(--blue);
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.donation-card p {
+    color: var(--text);
+    font-size: 15px;
+}
+
+/* DONATION PROCESS */
+
+.process-section {
+    background: var(--light);
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.process-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.process-card .step {
+    background: var(--green);
+    color: white;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.process-card h3 {
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+/* CTA */
+
+.cta {
+    background: linear-gradient(120deg, var(--blue), #001E4B);
+    padding: 75px 20px;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #e0e8f5;
+}
+
+/* DONATION ENQUIRY */
+
+.contact-section {
+    background: var(--light);
+}
+
+.contact-box {
+    max-width: 750px;
+    background: white;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: var(--blue);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce3ec;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #071B38;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.footer p {
+    color: #c6d2e3;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #72D58B;
+}
+
+/* RESPONSIVENESS */
+
+@media(max-width: 800px) {
+    .donation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 550px) {
+    .donation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .mpesa-card {
+        padding: 22px;
+    }
+
+    .payment-item {
+        width: 100%;
+    }
+
+    .cta h2 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Be the Reason Someone Smiles Today</h1>
+
+        <p>
+            Your generosity can transform lives, restore hope,
+            support vulnerable children, empower persons with
+            disabilities and strengthen disadvantaged communities.
+        </p>
+
+        <a href="#donate" class="btn btn-green">
+            Donate Now
+        </a>
+
+        <a href="#inkind" class="btn btn-white">
+            Give In-Kind
+        </a>
+    </div>
+</section>
+
+
+<!-- DONATION BANNER -->
+
+<section class="donation-banner" id="donate">
+
+    <h2>Your Donation Makes a Difference!</h2>
+
+    <p>
+        Support Charity Aid YCO through M-Pesa and help us
+        create lasting change in our communities.
+    </p>
+
+    <div class="payment-details">
+
+        <div class="payment-item">
+            <span>M-Pesa Paybill Number</span>
+            <strong>880100</strong>
+        </div>
+
+        <div class="payment-item">
+            <span>Account Number</span>
+            <strong>902232</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Every Contribution Counts
+        </h2>
+
+        <p class="section-desc">
+            At Charity Aid YCO, we believe that every person
+            deserves dignity, opportunity and a chance to thrive.
+            Your financial and material contributions help us
+            reach orphans, vulnerable children, persons with
+            disabilities, women, youth and disadvantaged families.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- M-PESA DONATION -->
+
+<section class="section mpesa-section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Donate Through M-Pesa
+        </h2>
+
+        <p class="section-desc">
+            Make a secure contribution using Safaricom M-Pesa.
+            Every amount, big or small, helps change lives.
+        </p>
+
+        <div class="mpesa-card">
+
+            <h3>📱 M-Pesa Paybill Donation</h3>
+
+            <p>
+                Follow these simple steps to support our programmes:
+            </p>
+
+            <div class="mpesa-number">
+
+                <p><strong>Business Number (Paybill):</strong></p>
+
+                <div class="number">880100</div>
+
+                <br>
+
+                <p><strong>Account Number:</strong></p>
+
+                <div class="account">902232</div>
+
+            </div>
+
+            <h3>How to Donate</h3>
+
+            <ol>
+                <li>Open your M-Pesa menu.</li>
+                <li>Select <strong>Lipa na M-Pesa</strong>.</li>
+                <li>Select <strong>Pay Bill</strong>.</li>
+                <li>Enter Business Number: <strong>880100</strong>.</li>
+                <li>Enter Account Number: <strong>902232</strong>.</li>
+                <li>Enter the amount you wish to donate.</li>
+                <li>Enter your M-Pesa PIN and confirm.</li>
+            </ol>
+
+            <div class="notice">
+                <strong>Thank You for Giving!</strong><br>
+                Your generosity supports education, healthcare,
+                inclusion, empowerment and community development.
+                Please retain your M-Pesa confirmation message.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- IN-KIND DONATIONS -->
+
+<section class="section" id="inkind">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Donate Goods & Supplies
+        </h2>
+
+        <p class="section-desc">
+            Not everyone can donate financially, but everyone
+            can make a difference. Charity Aid YCO welcomes
+            in-kind donations that support orphans, children
+            with disabilities, vulnerable children, youth,
+            women and disadvantaged families.
+        </p>
+
+        <div class="donation-grid">
+
+            <div class="donation-card">
+                <div class="icon">👕</div>
+                <h3>Clothing Donations</h3>
+                <p>
+                    New or gently used clothes for orphans,
+                    children with disabilities, vulnerable
+                    children, youth and families in need.
+                </p>
+            </div>
+
+            <div class="donation-card">
+                <div class="icon">🎒</div>
+                <h3>School Uniforms</h3>
+                <p>
+                    School uniforms, shoes, sweaters,
+                    sportswear, socks and other essential
+                    school items for vulnerable learners.
+                </p>
+            </div>
+
+            <div class="donation-card">
+                <div class="icon">📚</div>
+                <h3>Books & Learning Materials</h3>
+                <p>
+                    Textbooks, storybooks, revision materials,
+                    dictionaries and educational resources
+                    that improve learning outcomes.
+                </p>
+            </div>
+
+            <div class="donation-card">
+                <div class="icon">✏️</div>
+                <h3>Stationery Support</h3>
+                <p>
+                    Exercise books, pens, pencils, rulers,
+                    mathematical sets, crayons and other
+                    classroom supplies.
+                </p>
+            </div>
+
+            <div class="donation-card">
+                <div class="icon">♿</div>
+                <h3>Disability Support Items</h3>
+                <p>
+                    Assistive devices, mobility aids,
+                    accessible learning materials and
+                    resources that promote inclusion.
+                </p>
+            </div>
+
+            <div class="donation-card">
+                <div class="icon">🍚</div>
+                <h3>Food & Household Items</h3>
+                <p>
+                    Non-perishable food items, hygiene
+                    products, bedding, blankets and
+                    essential household supplies.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW TO GIVE IN-KIND -->
+
+<section class="section process-section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            How to Make an In-Kind Donation
+        </h2>
+
+        <p class="section-desc">
+            Giving essential items is simple. Follow these steps
+            to make your contribution.
+        </p>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <div class="step">1</div>
+                <h3>Choose What to Give</h3>
+                <p>
+                    Identify clothes, books, uniforms,
+                    stationery or other essential items
+                    you would like to contribute.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step">2</div>
+                <h3>Contact Our Team</h3>
+                <p>
+                    Reach out to Charity Aid YCO to
+                    coordinate your donation and confirm
+                    current needs and delivery arrangements.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step">3</div>
+                <h3>Deliver Your Donation</h3>
+                <p>
+                    Arrange delivery or collection with
+                    our team so that your contribution
+                    reaches the intended beneficiaries.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>Be a Champion of Hope</h2>
+
+        <p>
+            Together, we can build a society where every child
+            has an opportunity to learn, every person is treated
+            with dignity and every vulnerable family has hope
+            for a better future.
+        </p>
+
+        <a href="#donate" class="btn btn-green">
+            Donate Financially
+        </a>
+
+        <a href="#inkind" class="btn btn-white">
+            Donate Essential Items
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- DONATION ENQUIRY FORM -->
+
+<section class="section contact-section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Interested in Supporting Us?
+        </h2>
+
+        <p class="section-desc">
+            Get in touch with our team to discuss financial
+            contributions, material donations, partnerships
+            and other ways of supporting our mission.
+        </p>
+
+        <div class="contact-box">
+
+            <form action="mailto:info@charityaidyco.org"
+                  method="post"
+                  enctype="text/plain">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="Name"
+                           placeholder="Enter your full name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="Email"
+                           placeholder="Enter your email address"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="donation">Type of Donation</label>
+
+                    <select id="donation" name="Donation Type" required>
+                        <option value="">Select donation type</option>
+                        <option>Financial Donation</option>
+                        <option>Clothing</option>
+                        <option>School Uniforms</option>
+                        <option>Books and Learning Materials</option>
+                        <option>Stationery</option>
+                        <option>Disability Support Items</option>
+                        <option>Food and Household Items</option>
+                        <option>Partnership or Sponsorship</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message"
+                              placeholder="Tell us how you would like to support us..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-green submit-btn">
+                    Send Donation Enquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h3>Charity Aid YCO</h3>
+
+        <p>
+            Together We Can Make a Difference.
+        </p>
+
+        <p style="margin-top:15px;">
+            M-Pesa Paybill: <strong>880100</strong> |
+            Account: <strong>902232</strong>
+        </p>
+
+        <p style="margin-top:15px;">
+            Contact us:
+            <a href="mailto:info@charityaidyco.org">
+                info@charityaidyco.org
+            </a>
+        </p>
+
+        <p style="margin-top:20px;">
+            &copy; <span id="year"></span> Charity Aid YCO.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
