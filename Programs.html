@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs | Charity Aid YCO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+:root{
+--blue:#003B8E;
+--light-blue:#0A6DFF;
+--green:#34A853;
+--gold:#F4B400;
+--maroon:#8B0015;
+--light:#F8FBFF;
+--dark:#001A44;
+}
+
+body{
+background:var(--light);
+color:#444;
+line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+background:#fff;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 20px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:75px;
+}
+
+.logo h2{
+color:var(--blue);
+font-weight:700;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+color:#333;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--light-blue);
+}
+
+/* HERO */
+
+.hero{
+background:
+linear-gradient(rgba(0,59,142,.90),rgba(0,59,142,.90)),
+url("community.jpg");
+background-size:cover;
+background-position:center;
+padding:120px 8%;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:18px;
+}
+
+/* SECTION */
+
+.section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:var(--blue);
+margin-bottom:15px;
+}
+
+.section-description{
+max-width:900px;
+margin:auto;
+text-align:center;
+margin-bottom:60px;
+}
+
+/* PROGRAMS */
+
+.program-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.program-card{
+padding:35px;
+border-radius:18px;
+color:white;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+transition:.4s;
+}
+
+.program-card:hover{
+transform:translateY(-10px);
+}
+
+.program-card h3{
+margin-bottom:15px;
+font-size:24px;
+}
+
+.program-card p{
+font-size:15px;
+}
+
+/* PROGRAM COLORS */
+
+.blue{
+background:linear-gradient(135deg,#003B8E,#0A6DFF);
+}
+
+.green{
+background:linear-gradient(135deg,#1C7C3A,#34A853);
+}
+
+.gold{
+background:linear-gradient(135deg,#C69300,#F4B400);
+}
+
+.maroon{
+background:linear-gradient(135deg,#600010,#8B0015);
+}
+
+.sky{
+background:linear-gradient(135deg,#0073ff,#52b0ff);
+}
+
+.mix{
+background:linear-gradient(135deg,#003B8E,#34A853);
+}
+
+/* IMPACT */
+
+.impact{
+background:#fff;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.stat{
+background:#fff;
+padding:35px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-bottom:5px solid var(--gold);
+}
+
+.stat h2{
+color:var(--blue);
+font-size:40px;
+margin-bottom:10px;
+}
+
+/* CTA */
+
+.cta{
+background:linear-gradient(135deg,#003B8E,#0A6DFF);
+color:white;
+text-align:center;
+padding:90px 8%;
+}
+
+.cta h2{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.cta p{
+max-width:750px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.cta a{
+background:var(--gold);
+padding:15px 35px;
+text-decoration:none;
+color:white;
+border-radius:6px;
+font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+background:linear-gradient(135deg,#001A44,#003B8E);
+color:white;
+padding:70px 8% 25px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-logo{
+height:80px;
+margin-bottom:15px;
+}
+
+.footer-column h3{
+color:var(--gold);
+margin-bottom:20px;
+}
+
+.footer-column p{
+margin-bottom:10px;
+}
+
+.footer-column a{
+display:block;
+text-decoration:none;
+color:white;
+margin-bottom:10px;
+transition:.3s;
+}
+
+.footer-column a:hover{
+color:var(--gold);
+padding-left:5px;
+}
+
+.footer-bottom{
+margin-top:40px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.2);
+padding-top:20px;
+}
+
+.footer-bottom span{
+color:var(--gold);
+font-weight:600;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png" alt="Charity Aid YCO Logo">
+<h2>Charity Aid YCO</h2>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="Home.html">About Us</a>
+<a href="Programs.html">Programs</a>
+<a href="Contact.html">Contact Us</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Our Programs</h1>
+
+<p>
+Creating sustainable opportunities and delivering transformative solutions
+that empower communities, strengthen livelihoods, and improve quality of life.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Flagship Programs</h2>
+
+<p class="section-description">
+Our programs address key social, economic and environmental challenges while
+promoting sustainable community development and long-term impact.
+</p>
+
+<div class="program-grid">
+
+<div class="program-card blue">
+<h3>💼 Economic Empowerment</h3>
+<p>
+Entrepreneurship development, vocational training, business incubation,
+financial literacy and income-generating opportunities.
+</p>
+</div>
+
+<div class="program-card green">
+<h3>🌱 Environmental Sustainability</h3>
+<p>
+Climate change adaptation, tree planting campaigns, conservation and
+community-led environmental stewardship.
+</p>
+</div>
+
+<div class="program-card gold">
+<h3>🎓 Education Support</h3>
+<p>
+Scholarships, school support programs, digital literacy and educational
+advancement opportunities.
+</p>
+</div>
+
+<div class="program-card maroon">
+<h3>🤝 Humanitarian Assistance</h3>
+<p>
+Emergency relief, disaster response, food support and protection services
+for vulnerable households.
+</p>
+</div>
+
+<div class="program-card sky">
+<h3>🏥 Health & Wellbeing</h3>
+<p>
+Community health outreach, nutrition awareness, health promotion and
+preventive healthcare initiatives.
+</p>
+</div>
+
+<div class="program-card mix">
+<h3>👩 Youth & Women Empowerment</h3>
+<p>
+Leadership development, mentorship, employment creation and economic
+inclusion opportunities.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section impact">
+
+<h2 class="section-title">Strategic Impact Areas</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>6</h2>
+<p>Strategic Program Areas</p>
+</div>
+
+<div class="stat">
+<h2>5</h2>
+<p>Strategic Implementation Phases</p>
+</div>
+
+<div class="stat">
+<h2>2027-2032</h2>
+<p>Strategic Plan Period</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Community Participation Approach</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Together We Can Transform Lives</h2>
+
+<p>
+Partner with Charity Aid YCO to create sustainable solutions, empower
+communities and drive meaningful change across Kenya.
+</p>
+
+<a href="Contact.html">Partner With Us</a>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div class="footer-column">
+
+<img src="logo.png" class="footer-logo" alt="Logo">
+
+<h3>Charity Aid YCO</h3>
+
+<p>
+Empowering Communities, Transforming Lives through sustainable development,
+education support, healthcare access, environmental stewardship and economic empowerment.
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="Home.html">About Us</a>
+<a href="Programs.html">Programs</a>
+<a href="Contact.html">Contact Us</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Programs</h3>
+
+<a href="#">Economic Empowerment</a>
+<a href="#">Education Support</a>
+<a href="#">Health & Wellbeing</a>
+<a href="#">Environmental Sustainability</a>
+<a href="#">Humanitarian Assistance</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact Information</h3>
+
+<p>📍 Kenya</p>
+<p>📧 info@charityaidyco.org</p>
+<p>📞 +254 XXX XXX XXX</p>
+
+<h3 style="margin-top:20px;">Follow Us</h3>
+
+<p>Facebook | LinkedIn | Instagram | X</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2027 Charity Aid YCO. All Rights Reserved.<br>
+<span>Empowering Communities, Transforming Lives.</span>
+</div>
+
+</footer>
+
+</body>
+</html>
