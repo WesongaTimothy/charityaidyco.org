@@ -1823,151 +1823,234 @@ a {
 
 </section>
 
+   
+<!-- =====================================
+     COMMUNITY REGISTRATION & FINAL CTA
+===================================== -->
 
-<!-- Charity Aid YCO Registration Section -->
-<section class="cayco-registration">
-  <div class="registration-content">
-    <span class="registration-label">GET INVOLVED</span>
+<section class="cayco-community-cta">
+  <div class="cayco-cta-inner">
 
-    <h2>Registration to Charity Aid YCO</h2>
+    <!-- LEFT: REGISTRATION -->
+    <div class="cayco-cta-panel registration-panel">
 
-    <p>
-      Become part of a community committed to empowering people
-      and transforming lives. Register your interest in joining
-      Charity Aid YCO as a member, volunteer, community supporter,
-      or partner.
-    </p>
+      <span class="cayco-cta-label">GET INVOLVED</span>
 
-    <p>
-      Together, we can promote education, youth empowerment,
-      community development, health, gender equality, and
-      sustainable livelihoods.
-    </p>
+      <h2>Join Charity Aid YCO</h2>
 
-    <a href="registration.html" class="registration-button">
-      Register with Charity Aid YCO
-      <span aria-hidden="true">&rarr;</span>
-    </a>
+      <p>
+        Become part of a community committed to empowering people
+        and transforming lives. Register your interest as a member,
+        volunteer, community supporter, or partner.
+      </p>
 
-    <p class="registration-note">
-      Registration is an expression of interest. Our team may
-      contact you to discuss your application.
-    </p>
+      <p>
+        Together, we can advance education, youth empowerment,
+        community development, health, gender equality, and
+        sustainable livelihoods.
+      </p>
+
+      <a href="registration.html" class="cayco-cta-button">
+        Register With Us
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+
+      <p class="cayco-cta-note">
+        Registration is an expression of interest. Our team may
+        contact you to discuss your application.
+      </p>
+
+    </div>
+
+    <!-- RIGHT: FINAL CALL TO ACTION -->
+    <div class="cayco-cta-panel action-panel">
+
+      <span class="cayco-cta-label">OUR SHARED FUTURE</span>
+
+      <h2>Together, We Can Build a Better Tomorrow.</h2>
+
+      <p>
+        Every contribution, shared skill, act of kindness, and
+        community effort helps create a stronger, more inclusive,
+        and self-reliant society.
+      </p>
+
+      <a href="Contact.html" class="cayco-cta-button cta-button-light">
+        Connect With Us
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+
+    </div>
+
   </div>
 </section>
 
 <style>
-.cayco-registration {
-  background: linear-gradient(135deg, #f4f8fc, #ffffff);
-  padding: 65px 20px;
-  margin: 40px 0;
+/* MAIN SECTION */
+.cayco-community-cta {
+  padding: 35px 20px;
+  margin: 30px 0;
+  background: #f4f7fb;
   border-radius: 16px;
-  text-align: center;
 }
 
-.registration-content {
-  max-width: 760px;
-  margin: auto;
+/* TWO-COLUMN LAYOUT */
+.cayco-cta-inner {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 22px;
+  align-items: stretch;
 }
 
-.registration-label {
+/* BOTH PANELS */
+.cayco-cta-panel {
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* REGISTRATION PANEL */
+.registration-panel {
+  background: #ffffff;
+  border: 1px solid #e2eaf3;
+}
+
+/* FINAL CTA PANEL */
+.action-panel {
+  background: linear-gradient(135deg, #12345a, #0056b3);
+  color: #ffffff;
+}
+
+/* SMALL SECTION LABEL */
+.cayco-cta-label {
   display: inline-block;
-  color: #0056b3;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
+  color: #0056b3;
   margin-bottom: 12px;
 }
 
-.cayco-registration h2 {
-  color: #12345a;
-  font-size: 32px;
+.action-panel .cayco-cta-label {
+  color: #d9e9ff;
+}
+
+/* HEADINGS */
+.cayco-cta-panel h2 {
+  font-size: 27px;
   line-height: 1.3;
-  margin: 0 0 20px;
-}
-
-.cayco-registration p {
-  color: #555;
-  font-size: 16px;
-  line-height: 1.8;
   margin: 0 0 15px;
+  color: #12345a;
 }
 
-.registration-button {
+.action-panel h2 {
+  color: #ffffff;
+}
+
+/* PARAGRAPHS */
+.cayco-cta-panel p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 13px;
+  color: #566273;
+}
+
+.action-panel p {
+  color: #e8f0fb;
+}
+
+/* BUTTONS */
+.cayco-cta-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   background: #0056b3;
   color: #ffffff !important;
   text-decoration: none !important;
-  padding: 15px 28px;
-  margin: 18px 0;
-  border-radius: 8px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
+  padding: 13px 22px;
+  border-radius: 7px;
+  margin-top: 8px;
   transition: background 0.25s ease,
               transform 0.25s ease;
 }
 
-.registration-button:hover {
+.cayco-cta-button:hover {
   background: #003f86;
   transform: translateY(-2px);
 }
 
-.cayco-registration .registration-note {
-  font-size: 13px;
-  color: #777;
-  margin-top: 8px;
+/* LIGHT BUTTON FOR BLUE PANEL */
+.cta-button-light {
+  background: #ffffff;
+  color: #12345a !important;
 }
 
+.cta-button-light:hover {
+  background: #eaf2fc;
+}
+
+/* REGISTRATION DISCLAIMER */
+.cayco-cta-panel .cayco-cta-note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #7a8491;
+  margin-top: 13px;
+  margin-bottom: 0;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 850px) {
+  .cayco-cta-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .cayco-cta-panel {
+    padding: 25px;
+  }
+
+  .cayco-cta-panel h2 {
+    font-size: 23px;
+  }
+}
+
+/* RESPONSIVE MOBILE */
 @media (max-width: 600px) {
-  .cayco-registration {
-    padding: 40px 18px;
+  .cayco-community-cta {
+    padding: 22px 14px;
+    margin: 20px 0;
   }
 
-  .cayco-registration h2 {
-    font-size: 25px;
+  .cayco-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
-  .cayco-registration p {
-    font-size: 15px;
+  .cayco-cta-panel {
+    padding: 25px 22px;
   }
 
-  .registration-button {
+  .cayco-cta-panel h2 {
+    font-size: 24px;
+  }
+
+  .cayco-cta-panel p {
+    font-size: 14px;
+  }
+
+  .cayco-cta-button {
     width: 100%;
     box-sizing: border-box;
   }
 }
 </style>
-
-<!-- =====================================
-     FINAL CALL TO ACTION
-===================================== -->
-
-<section class="final-cta">
-
-    <div class="container">
-
-        <h2>
-            Together, We Can Build a Better Tomorrow.
-        </h2>
-
-        <p>
-            Every contribution, every shared skill,
-            every act of kindness and every person
-            who participates helps create a stronger,
-            more inclusive and self-reliant community.
-        </p>
-
-        <a href="Contact.html" class="btn">
-            Connect With Charity Aid YCO →
-        </a>
-
-    </div>
-
-</section>
-
 
 <!-- =====================================
      STANDARD FOOTER
