@@ -607,51 +607,174 @@ Donate Today
 </section>
 
 <!-- FOOTER -->
+<footer class="cayco-footer">
 
-<footer>
+    <div class="cayco-footer-main">
 
-<div class="footer-grid">
+        <div class="cayco-footer-container">
 
-<div>
-<h3>Charity Aid YCO</h3>
+            <!-- ABOUT -->
 
-<p>
-Empowering Communities, Transforming Lives through sustainable development,
-social justice, education, health, environmental stewardship, and economic empowerment.
-</p>
+            <div class="cayco-footer-about">
 
-</div>
+                <a href="index.html" class="cayco-brand">
+                    <img src="logo.jpg" alt="Charity Aid YCO Logo">
+                    <h2>Charity Aid <span>YCO</span></h2>
+                </a>
 
-<div>
+                <p>
+                    Empowering Communities, Transforming Lives through
+                    sustainable development, social justice, education,
+                    health, environmental stewardship and economic
+                    empowerment.
+                </p>
 
-<h3>Quick Links</h3>
+            </div>
 
-<a href="index.html">Home</a>
-<a href="About.html">About Us</a>
-<a href="Programs.html">Programs</a>
-<a href="Contact.html">Contact Us</a>
-<a href="donate.html">Contact Us</a>  
+            <!-- QUICK LINKS -->
 
-</div>
+            <div class="cayco-footer-column">
 
-<div>
+                <h3>Quick Links</h3>
 
-<h3>Contact Information</h3>
+                <ul class="cayco-footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Programs.html">Our Programs</a></li>
+                    <li><a href="Community.html">Community</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                </ul>
 
-<p>📍 Kenya</p>
-<p>📧 info@charityaidyco.org</p>
-<p>📞 +254 XXX XXX XXX</p>
+            </div>
 
-</div>
+            <!-- FOCUS AREAS -->
 
-</div>
+            <div class="cayco-footer-column">
 
-<div class="copyright">
-© 2027 Charity Aid YCO. All Rights Reserved.<br>
-Empowering Communities, Transforming Lives.
-</div>
+                <h3>Our Focus Areas</h3>
+
+                <ul class="cayco-footer-links">
+                    <li><a href="Programs.html">Economic Empowerment</a></li>
+                    <li><a href="Programs.html">Education Support</a></li>
+                    <li><a href="Programs.html">Health &amp; Wellbeing</a></li>
+                    <li><a href="Programs.html">Environmental Sustainability</a></li>
+                    <li><a href="Programs.html">Humanitarian Assistance</a></li>
+                    <li><a href="Programs.html">Social Justice &amp; Inclusion</a></li>
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="cayco-footer-column">
+
+                <h3>Contact Information</h3>
+
+                <div class="cayco-contact-item">Kenya</div>
+
+                <div class="cayco-contact-item">
+                    ✉
+                    <a href="mailto:charityaidyco@gmail.com">
+                        charityaidyco@gmail.com
+                    </a>
+                </div>
+
+                <div class="cayco-contact-item">
+                    ☎
+                    <a href="tel:+254104380231">
+                        +254 104 380 231
+                    </a>
+                </div>
+
+                <h4 class="cayco-social-title">Follow Us</h4>
+
+                <div class="cayco-socials">
+
+                    <a href="https://www.facebook.com/profile.php?id=61596622811157"
+                       aria-label="Facebook">f</a>
+
+                    <a href="https://www.linkedin.com/company/charity-aid-yco/about/?viewAsMember=true"
+                       aria-label="LinkedIn">in</a>
+
+                    <a href="#"
+                       aria-label="Instagram">◎</a>
+
+                    <a href="#"
+                       aria-label="X">𝕏</a>
+
+                </div>
+
+                <a href="donate.html" class="cayco-support-btn">
+                    Support Our Mission →
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="cayco-footer-bottom">
+
+        <div class="cayco-footer-bottom-inner">
+
+            <p>
+                © <span id="caycoYear"></span>
+                Charity Aid YCO. All Rights Reserved.
+            </p>
+
+            <p class="cayco-footer-motto">
+                Empowering Communities, Transforming Lives.
+            </p>
+
+            <p>Building Hope. Creating Opportunities.</p>
+
+        </div>
+
+    </div>
 
 </footer>
 
+<!-- PAGE JAVASCRIPT -->
+
+<script>
+/* MOBILE NAVIGATION */
+
+const menuToggle = document.getElementById("caycoMenuToggle");
+const mainNav = document.getElementById("caycoMainNav");
+
+menuToggle.addEventListener("click", function () {
+
+    mainNav.classList.toggle("show");
+
+    const expanded = mainNav.classList.contains("show");
+
+    menuToggle.setAttribute("aria-expanded", expanded);
+    menuToggle.innerHTML = expanded ? "&times;" : "☰";
+
+});
+
+/* CLOSE MOBILE MENU AFTER SELECTING A LINK */
+
+mainNav.querySelectorAll("a").forEach(function (link) {
+
+    link.addEventListener("click", function () {
+        mainNav.classList.remove("show");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = "☰";
+    });
+
+});
+
+/* COPYRIGHT YEAR */
+
+document.getElementById("caycoYear").textContent =
+    new Date().getFullYear();
+</script>
+
 </body>
 </html>
+
