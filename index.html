@@ -303,57 +303,348 @@ margin-bottom:30px;
 }
 
 /* FOOTER */
+/* =========================================
+   CHARITY AID YCO STANDARD FOOTER
+========================================= */
 
-footer{
-background:#00152D;
-color:white;
-padding:60px 8%;
+.cayco-footer {
+    color: white;
+    background: #06264E;
+    border-top: 5px solid #34A853;
+    font-family: Arial, sans-serif;
 }
 
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
+.cayco-footer-main {
+    background: linear-gradient(120deg,#061D3C,#003B75);
+    padding: 55px 0 45px;
 }
 
-footer h3{
-margin-bottom:15px;
-color:#fff;
+.cayco-footer-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1.3fr;
+    gap: 35px;
 }
 
-footer a{
-display:block;
-text-decoration:none;
-color:white;
-margin-bottom:10px;
+.cayco-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: white;
 }
 
-.copyright{
-text-align:center;
-margin-top:40px;
-padding-top:20px;
-border-top:1px solid rgba(255,255,255,.15);
+.cayco-brand img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
 }
 
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.hero h1{
-font-size:42px;
+.cayco-brand h2 {
+    font-size: 23px;
+    color: white;
 }
 
-.about-grid{
-grid-template-columns:1fr;
+.cayco-brand h2 span {
+    color: var(--green);
 }
 
-nav{
-display:none;
+.cayco-footer-about p,
+.cayco-footer-column p {
+    color: #d5e1ef;
+    font-size: 13px;
+    line-height: 1.9;
 }
+
+.cayco-footer-column h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 22px;
+    padding-left: 12px;
+    border-left: 4px solid var(--green);
+}
+
+.cayco-footer-links {
+    list-style: none;
+}
+
+.cayco-footer-links li {
+    margin-bottom: 12px;
+}
+
+.cayco-footer-links a {
+    color: #d5e1ef;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.cayco-footer-links a:hover {
+    color: var(--green);
+    padding-left: 4px;
+}
+
+.cayco-footer-links a::before {
+    content: "›";
+    color: var(--green);
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.cayco-contact-item {
+    margin-bottom: 14px;
+    color: #d5e1ef;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.cayco-contact-item a {
+    color: #d5e1ef;
+}
+
+.cayco-social-title {
+    margin: 22px 0 12px;
+    font-size: 14px;
+}
+
+.cayco-socials {
+    display: flex;
+    gap: 9px;
+}
+
+.cayco-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #174E85;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cayco-socials a:hover {
+    background: var(--green);
+}
+
+.cayco-support-btn {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    padding: 10px 17px;
+    border-radius: 5px;
+    margin-top: 18px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cayco-footer-bottom {
+    background: #04172F;
+    padding: 20px 0;
+    border-top: 1px solid #30415b;
+}
+
+.cayco-footer-bottom-inner {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cayco-footer-bottom p {
+    color: #c5d2e2;
+    font-size: 12px;
+}
+
+.cayco-footer-motto {
+    color: white !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media(max-width: 1000px) {
+
+    .main-nav {
+        gap: 13px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .activity-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cayco-footer-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width: 750px) {
+
+    .header-inner {
+        min-height: 75px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    }
+
+    .main-nav.show {
+        display: flex;
+    }
+
+    .main-nav a {
+        padding: 12px;
+        border-bottom: 1px solid #edf0f4;
+        font-size: 14px;
+    }
+
+    .main-nav .nav-donate {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .community-hero {
+        min-height: 490px;
+    }
+
+    .savings-grid,
+    .learning-grid,
+    .solidarity-content,
+    .inquiry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .participate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width: 550px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .brand img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .brand-name {
+        font-size: 17px;
+    }
+
+    .hero-content h1 {
+        font-size: 37px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .section-heading {
+        font-size: 27px;
+    }
+
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-card img {
+        height: 220px;
+    }
+
+    .savings-image img,
+    .learning-image img,
+    .solidarity-image img {
+        height: 270px;
+    }
+
+    .savings-content h2,
+    .learning-content h2,
+    .solidarity-text h2 {
+        font-size: 26px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .inquiry-form,
+    .inquiry-info {
+        padding: 23px;
+    }
+
+    .final-cta h2 {
+        font-size: 27px;
+    }
+
+    .cayco-footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cayco-footer-bottom-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
 
 </style>
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e0b297eeb9a8f52b5777d1770/96f29b9c6e34421690daa050d.js");</script>
+   </style>
+
+<!-- Mailchimp Connected Site Code -->
+<script id="mcjs">
+!function(c,h,i,m,p){
+    m=c.createElement(h),
+    p=c.getElementsByTagName(h)[0],
+    m.async=1,
+    m.src=i,
+    p.parentNode.insertBefore(m,p)
+}(document,"script",
+"https://chimpstatic.com/mcjs-connected/js/users/e0b297eeb9a8f52b5777d1770/96f29b9c6e34421690daa050d.js");
+</script>
 </head>
 
 <body>
