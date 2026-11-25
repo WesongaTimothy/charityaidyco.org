@@ -1,96 +1,30 @@
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO -->
-    <title>Contact Charity Aid YCO | Community Support & Partnerships</title>
-
-    <meta name="description"
-          content="Contact Charity Aid YCO in Kenya for community support, partnerships, volunteering, donations, and information about our education, health, and empowerment programs.">
-
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Charity Aid YCO">
-
-    <link rel="canonical"
-          href="https://wesongatimothy.github.io/charityaidyco.org/contact.html">
-
-    <!-- Open Graph / Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title"
-          content="Contact Charity Aid YCO">
-    <meta property="og:description"
-          content="Get in touch with Charity Aid YCO for partnerships, volunteering, donations, and community support.">
-    <meta property="og:url"
-          content="https://wesongatimothy.github.io/charityaidyco.org/contact.html">
-    <meta property="og:site_name" content="Charity Aid YCO">
-    <meta property="og:image"
-          content="https://wesongatimothy.github.io/charityaidyco.org/logo.jpg">
-
-    <!-- Theme Colour -->
-    <meta name="theme-color" content="#06264E">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <title>Contact Charity Aid YCO</title>
-
-    <style>
-        /* CSS CODE GOES HERE */
-    </style>
-
+<!-- ===================== HEADER & FOOTER STYLES ===================== -->
+<style>
 :root {
-    --green: #34A853;
-    --navy: #003B75;
-    --dark: #06264E;
-    --light: #F3F7FC;
-    --white: #FFFFFF;
-    --text: #263449;
-    --muted: #68768A;
-    --border: #D6DEEA;
+    --cayco-green: #34A853;
+    --cayco-navy: #003B75;
+    --cayco-dark: #06264E;
+    --cayco-light: #F3F7FC;
+    --cayco-white: #FFFFFF;
+    --cayco-text: #263449;
+    --cayco-muted: #D5E1EF;
 }
 
-/* GENERAL */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
+.top-bar,
+.site-header,
+.cayco-footer {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: var(--text);
-    line-height: 1.7;
-    background: #FFFFFF;
 }
 
-a {
-    text-decoration: none;
-}
+/* ===================== TOP CONTACT BAR ===================== */
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* TOP BAR */
 .top-bar {
-    background: var(--dark);
-    color: #FFFFFF;
+    background: var(--cayco-dark);
+    color: var(--cayco-white);
     padding: 10px 8%;
     display: flex;
     justify-content: space-between;
@@ -100,17 +34,25 @@ img {
 }
 
 .top-bar a {
-    color: #FFFFFF;
+    color: var(--cayco-white);
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .top-bar a:hover {
-    color: var(--green);
+    color: var(--cayco-green);
 }
 
-/* HEADER */
+.top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ===================== MAIN HEADER ===================== */
+
 .site-header {
-    background: #FFFFFF;
+    background: var(--cayco-white);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
@@ -120,20 +62,22 @@ img {
 .header-inner {
     width: 92%;
     max-width: 1300px;
-    margin: auto;
     min-height: 85px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
 
-/* LOGO */
+/* Logo and organisation name */
+
 .brand {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+    text-decoration: none;
 }
 
 .brand img {
@@ -144,25 +88,26 @@ img {
 
 .brand-name {
     font-size: 21px;
-    color: var(--dark);
+    color: var(--cayco-dark);
     font-weight: 800;
     line-height: 1.2;
 }
 
 .brand-name span {
-    color: var(--green);
+    color: var(--cayco-green);
 }
 
 .brand-name small {
     display: block;
     font-size: 9px;
     letter-spacing: 1.5px;
-    color: var(--muted);
+    color: #68768A;
     font-weight: 600;
     margin-top: 4px;
 }
 
-/* NAVIGATION */
+/* Navigation */
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -174,40 +119,46 @@ img {
     align-items: center;
     gap: 25px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .main-nav a {
     color: #24364B;
     font-size: 14px;
     font-weight: 600;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .main-nav a:hover,
 .main-nav a.active {
-    color: var(--green);
+    color: var(--cayco-green);
 }
 
-/* DONATE BUTTON */
+/* Donate button */
+
 .main-nav .nav-donate {
     display: inline-block;
-    background: var(--green);
-    color: #FFFFFF;
+    background: var(--cayco-green);
+    color: var(--cayco-white);
     padding: 11px 23px;
     border-radius: 5px;
+    text-decoration: none;
     transition: background 0.3s ease;
 }
 
 .main-nav .nav-donate:hover {
-    background: var(--navy);
-    color: #FFFFFF;
+    background: var(--cayco-navy);
+    color: var(--cayco-white);
 }
 
-/* MOBILE MENU BUTTON */
+/* Mobile menu button */
+
 .menu-toggle {
     display: none;
-    background: var(--navy);
-    color: #FFFFFF;
+    background: var(--cayco-navy);
+    color: var(--cayco-white);
     border: 0;
     border-radius: 5px;
     font-size: 25px;
@@ -215,192 +166,12 @@ img {
     cursor: pointer;
 }
 
-/* CONTACT HERO */
-.contact-hero {
-    background: linear-gradient(120deg, #06264E, #003B75);
-    color: #FFFFFF;
-    text-align: center;
-    padding: 60px 20px;
-}
+/* ===================== FOOTER ===================== */
 
-.contact-hero .eyebrow {
-    color: #75DF91;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.contact-hero h1 {
-    font-size: clamp(32px, 5vw, 48px);
-    line-height: 1.2;
-    margin: 10px 0;
-}
-
-.contact-hero p {
-    max-width: 700px;
-    margin: auto;
-    color: #E2EDF7;
-    font-size: 15px;
-}
-
-/* CONTACT SECTION */
-.contact-section {
-    padding: 65px 0;
-    background: #F5F8FC;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 0.85fr 1.15fr;
-    gap: 30px;
-    align-items: start;
-}
-
-/* CONTACT CARDS */
-.contact-info,
-.contact-form {
-    padding: 32px;
-    border-radius: 12px;
-}
-
-.contact-info {
-    background: var(--navy);
-    color: #FFFFFF;
-}
-
-.contact-info h2,
-.contact-form h2 {
-    font-size: 26px;
-    margin-bottom: 12px;
-    line-height: 1.3;
-}
-
-.contact-info p {
-    color: #D8E6F3;
-    margin-bottom: 22px;
-    font-size: 14px;
-}
-
-.info-item {
-    margin: 18px 0;
-}
-
-.info-item strong {
-    display: block;
-    color: #75DF91;
-    font-size: 14px;
-}
-
-.info-item a {
-    color: #FFFFFF;
-    overflow-wrap: anywhere;
-}
-
-.info-item a:hover {
-    color: #75DF91;
-}
-
-/* CONTACT FORM */
-.contact-form {
-    background: #FFFFFF;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
-}
-
-.contact-form > p {
-    color: var(--muted);
-    font-size: 14px;
-    margin-bottom: 22px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-.form-group {
-    margin-bottom: 16px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 7px;
-    color: #30445C;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 13px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font: 14px 'Poppins', Arial, sans-serif;
-    outline: none;
-    background: #FFFFFF;
-    color: var(--text);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: var(--green);
-    box-shadow: 0 0 0 3px rgba(52, 168, 83, 0.12);
-}
-
-.form-group textarea {
-    min-height: 130px;
-    resize: vertical;
-}
-
-/* SUBMIT BUTTON */
-.submit-btn {
-    width: 100%;
-    padding: 14px;
-    background: var(--green);
-    color: #FFFFFF;
-    border: 0;
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: inherit;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.submit-btn:hover {
-    background: var(--navy);
-}
-
-.form-note {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 12px;
-}
-
-/* CONTACT BOTTOM */
-.contact-bottom {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.contact-bottom h2 {
-    color: var(--navy);
-    margin-bottom: 8px;
-}
-
-.contact-bottom p {
-    color: var(--muted);
-}
-
-/* FOOTER */
 .cayco-footer {
-    color: #FFFFFF;
-    background: #06264E;
-    border-top: 5px solid var(--green);
+    color: var(--cayco-white);
+    background: var(--cayco-dark);
+    border-top: 5px solid var(--cayco-green);
 }
 
 .cayco-footer-main {
@@ -417,13 +188,15 @@ img {
     gap: 30px;
 }
 
-/* FOOTER BRAND */
+/* Footer brand */
+
 .cayco-brand {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 18px;
-    color: #FFFFFF;
+    color: var(--cayco-white);
+    text-decoration: none;
 }
 
 .cayco-brand img {
@@ -434,31 +207,39 @@ img {
 
 .cayco-brand h2 {
     font-size: 22px;
-    color: #FFFFFF;
+    color: var(--cayco-white);
+    margin: 0;
 }
 
 .cayco-brand h2 span {
-    color: var(--green);
+    color: var(--cayco-green);
 }
 
-/* FOOTER TEXT */
+/* Footer description */
+
 .cayco-footer-about p,
 .cayco-footer-column p {
-    color: #D5E1EF;
+    color: var(--cayco-muted);
     font-size: 13px;
     line-height: 1.9;
+    margin: 0;
 }
+
+/* Footer headings */
 
 .cayco-footer-column h3 {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
     padding-left: 12px;
-    border-left: 4px solid var(--green);
+    border-left: 4px solid var(--cayco-green);
 }
 
-/* FOOTER LINKS */
+/* Footer links */
+
 .cayco-footer-links {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .cayco-footer-links li {
@@ -466,38 +247,43 @@ img {
 }
 
 .cayco-footer-links a {
-    color: #D5E1EF;
+    color: var(--cayco-muted);
     font-size: 13px;
-}
-
-.cayco-footer-links a:hover {
-    color: var(--green);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .cayco-footer-links a::before {
     content: "›";
-    color: var(--green);
+    color: var(--cayco-green);
     font-size: 19px;
     margin-right: 10px;
 }
 
-/* FOOTER CONTACT */
+.cayco-footer-links a:hover {
+    color: var(--cayco-green);
+}
+
+/* Footer contact */
+
 .cayco-contact-item {
     margin-bottom: 12px;
-    color: #D5E1EF;
+    color: var(--cayco-muted);
     font-size: 13px;
     overflow-wrap: anywhere;
 }
 
 .cayco-contact-item a {
-    color: #D5E1EF;
+    color: var(--cayco-muted);
+    text-decoration: none;
 }
 
 .cayco-contact-item a:hover {
-    color: var(--green);
+    color: var(--cayco-green);
 }
 
-/* FOOTER SOCIALS */
+/* Social media */
+
 .cayco-social-title {
     margin: 20px 0 12px;
     font-size: 14px;
@@ -506,6 +292,7 @@ img {
 .cayco-socials {
     display: flex;
     gap: 9px;
+    flex-wrap: wrap;
 }
 
 .cayco-socials a {
@@ -513,35 +300,41 @@ img {
     height: 36px;
     border-radius: 50%;
     background: #174E85;
-    color: #FFFFFF;
+    color: var(--cayco-white);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 13px;
     font-weight: 700;
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
 
 .cayco-socials a:hover {
-    background: var(--green);
+    background: var(--cayco-green);
 }
 
-/* FOOTER SUPPORT BUTTON */
+/* Support button */
+
 .cayco-support-btn {
     display: inline-block;
-    background: var(--green);
-    color: #FFFFFF;
+    background: var(--cayco-green);
+    color: var(--cayco-white);
     padding: 10px 17px;
     border-radius: 5px;
     margin-top: 17px;
     font-size: 13px;
     font-weight: 700;
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
 
 .cayco-support-btn:hover {
     background: #258642;
 }
 
-/* FOOTER BOTTOM */
+/* Footer bottom */
+
 .cayco-footer-bottom {
     background: #04172F;
     padding: 18px 0;
@@ -561,42 +354,11 @@ img {
 .cayco-footer-bottom p {
     color: #C5D2E2;
     font-size: 12px;
-}
-
-/* MAILCHIMP */
-#mc_embed_signup {
-    background: transparent;
-    clear: both;
-    width: 100%;
-    font: inherit;
-}
-
-#mc_embed_signup form {
     margin: 0;
 }
 
-#mc_embed_signup input,
-#mc_embed_signup select,
-#mc_embed_signup textarea {
-    font: 14px Arial, Helvetica, sans-serif;
-}
+/* ===================== RESPONSIVE DESIGN ===================== */
 
-#mc_embed_signup .response {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 13px;
-}
-
-#mc_embed_signup #mce-error-response {
-    color: #8B0000;
-}
-
-#mc_embed_signup #mce-success-response {
-    color: #176B35;
-}
-
-/* TABLET */
 @media (max-width: 1000px) {
     .main-nav ul {
         gap: 13px;
@@ -615,7 +377,6 @@ img {
     }
 }
 
-/* MOBILE NAVIGATION */
 @media (max-width: 750px) {
     .header-inner {
         min-height: 75px;
@@ -632,7 +393,7 @@ img {
         left: 0;
         width: 100%;
         padding: 20px;
-        background: #FFFFFF;
+        background: var(--cayco-white);
         flex-direction: column;
         align-items: stretch;
         gap: 0;
@@ -663,26 +424,20 @@ img {
         border-bottom: 0;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
     .cayco-footer-container {
         grid-template-columns: 1fr;
     }
 }
 
-/* SMALL MOBILE */
 @media (max-width: 480px) {
     .top-bar {
         padding: 8px 4%;
         font-size: 11px;
         gap: 8px;
+    }
+
+    .top-bar-item {
+        gap: 5px;
     }
 
     .brand img {
@@ -694,84 +449,41 @@ img {
         font-size: 17px;
     }
 
-    .contact-hero {
-        padding: 45px 18px;
-    }
-
-    .contact-section {
-        padding: 40px 0;
-    }
-
-    .contact-info,
-    .contact-form {
-        padding: 23px;
-    }
-
-    .contact-info h2,
-    .contact-form h2 {
-        font-size: 22px;
-    }
-
     .cayco-footer-main {
         padding: 40px 0 30px;
     }
+
+    .cayco-footer-bottom-inner {
+        flex-direction: column;
+    }
 }
 </style>
-   </style>
 
-<script>
-    const menuToggle = document.getElementById("menuToggle");
-    const mainNav = document.getElementById("mainNav");
+<!-- ===================== TOP BAR ===================== -->
 
-    menuToggle.addEventListener("click", function () {
-        const isOpen = mainNav.classList.toggle("show");
-
-        menuToggle.setAttribute("aria-expanded", isOpen);
-        menuToggle.setAttribute(
-            "aria-label",
-            isOpen ? "Close navigation" : "Open navigation"
-        );
-
-        menuToggle.textContent = isOpen ? "✕" : "☰";
-    });
-</script>
-
-
-<!-- Mailchimp Connected Site Code -->
-<script id="mcjs">
-!function(c,h,i,m,p){
-    m=c.createElement(h),
-    p=c.getElementsByTagName(h)[0],
-    m.async=1,
-    m.src=i,
-    p.parentNode.insertBefore(m,p)
-}(document,"script",
-"https://chimpstatic.com/mcjs-connected/js/users/e0b297eeb9a8f52b5777d1770/96f29b9c6e34421690daa050d.js");
-</script>
-</head>
-<body>
-<!-- TOP CONTACT BAR -->
 <div class="top-bar">
-    <div>
+    <div class="top-bar-item">
+        <span aria-hidden="true">✉</span>
         <a href="mailto:charityaidyco@gmail.com">
             charityaidyco@gmail.com
         </a>
     </div>
 
-    <div>
+    <div class="top-bar-item">
+        <span aria-hidden="true">☎</span>
         <a href="tel:+254104380231">
             +254 104 380 231
         </a>
     </div>
 </div>
 
-<!-- WEBSITE HEADER -->
+<!-- ===================== MAIN HEADER ===================== -->
+
 <header class="site-header">
     <div class="header-inner">
 
-        <!-- BRAND -->
-        <a href="index.html" class="brand">
-            <img src="logo.jpg" alt="Charity Aid YCO logo">
+        <a href="index.html" class="brand" aria-label="Charity Aid YCO Home">
+            <img src="logo.jpg" alt="Charity Aid YCO Logo">
 
             <div class="brand-name">
                 Charity Aid <span>YCO</span>
@@ -779,177 +491,72 @@ img {
             </div>
         </a>
 
-        <!-- MOBILE MENU BUTTON -->
         <button
             class="menu-toggle"
             id="menuToggle"
-            aria-label="Open navigation"
+            type="button"
+            aria-label="Open navigation menu"
             aria-expanded="false"
             aria-controls="mainNav">
             ☰
         </button>
 
-        <!-- NAVIGATION -->
         <nav class="main-nav" id="mainNav" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Programs.html">Programs</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
-                <li><a href="donate.html" class="nav-donate">Donate</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="About.html">About</a>
+                </li>
+
+                <li>
+                    <a href="Programs.html">Programs</a>
+                </li>
+
+                <li>
+                    <a href="community.html">Community</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="active" aria-current="page">
+                        Contact
+                    </a>
+                </li>
             </ul>
+
+            <a href="donate.html" class="nav-donate">
+                Donate
+            </a>
         </nav>
 
     </div>
 </header>
 
-<!-- TOP CONTACT BAR -->
-<div class="top-bar">
-    <div>
-        <a href="mailto:charityaidyco@gmail.com">
-            charityaidyco@gmail.com
-        </a>
-    </div>
 
-    <div>
-        <a href="tel:+254104380231">
-            +254 104 380 231
-        </a>
-    </div>
-</div>
+<!-- ===================== CONTACT PAGE CONTENT ===================== -->
 
-<!-- WEBSITE HEADER -->
-<header class="site-header">
-    <div class="header-inner">
+<!-- Keep your existing Contact Us hero, contact information and form here. -->
 
-        <!-- BRAND -->
-        <a href="index.html" class="brand">
-            <img src="logo.jpg" alt="Charity Aid YCO logo">
 
-            <div class="brand-name">
-                Charity Aid <span>YCO</span>
-                <small>EMPOWERING COMMUNITIES</small>
-            </div>
-        </a>
-
-        <!-- MOBILE MENU BUTTON -->
-        <button
-            class="menu-toggle"
-            id="menuToggle"
-            aria-label="Open navigation"
-            aria-expanded="false"
-            aria-controls="mainNav">
-            ☰
-        </button>
-
-        <!-- NAVIGATION -->
-        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Programs.html">Programs</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
-                <li><a href="donate.html" class="nav-donate">Donate</a></li>
-            </ul>
-        </nav>
-
-    </div>
-</header>
-
-<main>
-  <section class="contact-hero">
-    <div class="eyebrow">We'd Love to Hear from You</div>
-    <h1>Contact Us</h1>
-    <p>Have a question, want to partner with us, volunteer or support our work? Send us a message.</p>
-  </section>
-
-  <section class="contact-section">
-    <div class="container contact-grid">
-      <aside class="contact-info">
-        <h2>Get in Touch</h2>
-        <p>Contact Charity Aid YCO for information about our programmes, community activities and partnership opportunities.</p>
-        <div class="info-item"><strong>Email</strong><a href="mailto:charityaidyco@gmail.com">charityaidyco@gmail.com</a></div>
-        <div class="info-item"><strong>Phone</strong><a href="tel:+254104380231">+254 104 380 231</a></div>
-        <div class="info-item"><strong>Location</strong><span>Kenya</span></div>
-        <div class="info-item"><strong>Connect with us</strong><span>Partnerships · Volunteering · Community Support</span></div>
-      </aside>
-
-      <div class="contact-form">
-        <h2>Send Us a Message</h2>
-        <p>Complete the form below. Your details will be submitted to Charity Aid YCO's Mailchimp audience.</p>
-        <div id="mc_embed_signup">
-          <form action="https://charityaidyco.us22.list-manage.com/subscribe/post?u=e0b297eeb9a8f52b5777d1770&amp;id=a87bd7461b&amp;f_id=00b2c2e1f0"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                class="validate" target="_blank">
-            <div id="mc_embed_signup_scroll">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="mce-FULLNAME">Full Name *</label>
-                  <input type="text" name="FULLNAME" id="mce-FULLNAME" required autocomplete="name" placeholder="Your full name">
-                </div>
-                <div class="form-group">
-                  <label for="mce-EMAIL">Email Address *</label>
-                  <input type="email" name="EMAIL" id="mce-EMAIL" required autocomplete="email" placeholder="you@example.com">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="mce-MMERGE12">Reason for Contact</label>
-                <select name="MMERGE12" id="mce-MMERGE12">
-                  <option value="">Choose a reason</option>
-                  <option value="General Enquiry">General Enquiry</option>
-                  <option value="Partnership">Partnership</option>
-                  <option value="Donation">Donation</option>
-                  <option value="Volunteering">Volunteering</option>
-                  <option value="Program Information">Program Information</option>
-                  <option value="Community Support">Community Support</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="mce-SUBJECT">Subject *</label>
-                <input type="text" name="SUBJECT" id="mce-SUBJECT" required placeholder="Message subject">
-              </div>
-              <div class="form-group">
-                <label for="mce-MESSAGE">Message *</label>
-                <textarea name="MESSAGE" id="mce-MESSAGE" rows="6" required placeholder="Write your message here..."></textarea>
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none;"></div>
-                <div class="response" id="mce-success-response" style="display:none;"></div>
-              </div>
-              <div aria-hidden="true" style="position:absolute;left:-5000px;">
-                <input type="text" name="b_e0b297eeb9a8f52b5777d1770_a87bd7461b" tabindex="-1" value="">
-              </div>
-              <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="submit-btn">Send Message</button>
-              <p class="form-note">Thank you for your submission. By submitting this form, you consent to Charity Aid YCO collecting and processing your personal data in accordance with our Data Protection and Privacy Policy.</p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-bottom">
-    <h2>Let's Make a Difference Together</h2>
-    <p>Every conversation can lead to a new opportunity to empower communities and transform lives.</p>
-  </section>
-</main>
+<!-- ===================== FOOTER ===================== -->
 
 <footer class="cayco-footer">
 
     <div class="cayco-footer-main">
-
         <div class="cayco-footer-container">
 
-            <!-- ABOUT -->
+            <!-- Organisation information -->
 
             <div class="cayco-footer-about">
 
                 <a href="index.html" class="cayco-brand">
                     <img src="logo.jpg" alt="Charity Aid YCO Logo">
-                    <h2>Charity Aid <span>YCO</span></h2>
+
+                    <h2>
+                        Charity Aid <span>YCO</span>
+                    </h2>
                 </a>
 
                 <p>
@@ -961,28 +568,24 @@ img {
 
             </div>
 
-            <!-- QUICK LINKS -->
+            <!-- Quick links -->
 
             <div class="cayco-footer-column">
-
                 <h3>Quick Links</h3>
 
                 <ul class="cayco-footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About Us</a></li>
                     <li><a href="Programs.html">Our Programs</a></li>
-                    <li><a href="Community.html">Community</a></li>
-                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="donate.html">Donate</a></li>
-                    <li><a href="registration.html">Register</a></li>
                 </ul>
-
             </div>
 
-            <!-- FOCUS AREAS -->
+            <!-- Focus areas -->
 
             <div class="cayco-footer-column">
-
                 <h3>Our Focus Areas</h3>
 
                 <ul class="cayco-footer-links">
@@ -993,47 +596,56 @@ img {
                     <li><a href="Programs.html">Humanitarian Assistance</a></li>
                     <li><a href="Programs.html">Social Justice &amp; Inclusion</a></li>
                 </ul>
-
             </div>
 
-            <!-- CONTACT -->
+            <!-- Contact information -->
 
             <div class="cayco-footer-column">
-
                 <h3>Contact Information</h3>
 
-                <div class="cayco-contact-item">Kenya</div>
+                <div class="cayco-contact-item">
+                    <span aria-hidden="true">📍</span>
+                    Kenya
+                </div>
 
                 <div class="cayco-contact-item">
-                    ✉
+                    <span aria-hidden="true">✉</span>
                     <a href="mailto:charityaidyco@gmail.com">
                         charityaidyco@gmail.com
                     </a>
                 </div>
 
                 <div class="cayco-contact-item">
-                    ☎
+                    <span aria-hidden="true">☎</span>
                     <a href="tel:+254104380231">
                         +254 104 380 231
                     </a>
                 </div>
 
-                <h4 class="cayco-social-title">Follow Us</h4>
+                <h4 class="cayco-social-title">Connect With Us</h4>
 
                 <div class="cayco-socials">
+                    <!-- Replace these links with your organisation's profile URLs -->
 
-                    <a href="https://www.facebook.com/profile.php?id=61596622811157"
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
                        aria-label="Facebook">f</a>
 
-                    <a href="https://www.linkedin.com/company/charity-aid-yco/about/?viewAsMember=true"
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
                        aria-label="LinkedIn">in</a>
 
-                    <a href="#"
+                    <a href="https://www.instagram.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
                        aria-label="Instagram">◎</a>
 
-                    <a href="#"
+                    <a href="https://x.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
                        aria-label="X">𝕏</a>
-
                 </div>
 
                 <a href="donate.html" class="cayco-support-btn">
@@ -1045,65 +657,56 @@ img {
         </div>
     </div>
 
-    <!-- FOOTER BOTTOM -->
+    <!-- Footer copyright -->
 
     <div class="cayco-footer-bottom">
-
         <div class="cayco-footer-bottom-inner">
 
             <p>
-                © <span id="caycoYear"></span>
-                Charity Aid YCO. All Rights Reserved.
+                © Charity Aid YCO. All Rights Reserved.
             </p>
 
-            <p class="cayco-footer-motto">
+            <p>
                 Empowering Communities, Transforming Lives.
             </p>
 
-            <p>Building Hope. Creating Opportunities.</p>
+            <p>
+                Building Hope. Creating Opportunities.
+            </p>
 
         </div>
-
     </div>
 
 </footer>
 
-<!-- PAGE JAVASCRIPT -->
+<!-- ===================== MOBILE MENU SCRIPT ===================== -->
 
 <script>
-/* MOBILE NAVIGATION */
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
 
-const menuToggle = document.getElementById("caycoMenuToggle");
-const mainNav = document.getElementById("caycoMainNav");
+    if (!menuToggle || !mainNav) return;
 
-menuToggle.addEventListener("click", function () {
+    menuToggle.addEventListener("click", function () {
+        const isOpen = mainNav.classList.toggle("show");
 
-    mainNav.classList.toggle("show");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
 
-    const expanded = mainNav.classList.contains("show");
-
-    menuToggle.setAttribute("aria-expanded", expanded);
-    menuToggle.innerHTML = expanded ? "&times;" : "☰";
-
-});
-
-/* CLOSE MOBILE MENU AFTER SELECTING A LINK */
-
-mainNav.querySelectorAll("a").forEach(function (link) {
-
-    link.addEventListener("click", function () {
-        mainNav.classList.remove("show");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.innerHTML = "☰";
+        menuToggle.textContent = isOpen ? "✕" : "☰";
     });
 
+    mainNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            mainNav.classList.remove("show");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open navigation menu");
+            menuToggle.textContent = "☰";
+        });
+    });
 });
-
-/* COPYRIGHT YEAR */
-
-document.getElementById("caycoYear").textContent =
-    new Date().getFullYear();
 </script>
-
-</body>
-</html>
