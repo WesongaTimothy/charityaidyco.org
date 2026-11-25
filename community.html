@@ -1886,168 +1886,159 @@ a {
 </section>
 
 <style>
-/* MAIN SECTION */
+/* OUTER SECTION */
 .cayco-community-cta {
-  padding: 35px 20px;
-  margin: 30px 0;
-  background: #f4f7fb;
-  border-radius: 16px;
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 25px 15px !important;
+  margin: 25px 0 !important;
+  background: #f4f7fb !important;
+  border-radius: 14px !important;
 }
 
-/* TWO-COLUMN LAYOUT */
-.cayco-cta-inner {
-  max-width: 1150px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 22px;
-  align-items: stretch;
+/* FORCE TWO COLUMNS */
+.cayco-community-cta .cayco-cta-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  width: 100% !important;
+  max-width: 1150px !important;
+  margin: 0 auto !important;
 }
 
-/* BOTH PANELS */
-.cayco-cta-panel {
-  padding: 32px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+/* LEFT AND RIGHT PANELS */
+.cayco-community-cta .cayco-cta-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 50% !important;
+  flex: 1 1 50% !important;
+  padding: 28px !important;
+  border-radius: 12px !important;
 }
 
-/* REGISTRATION PANEL */
-.registration-panel {
-  background: #ffffff;
-  border: 1px solid #e2eaf3;
+/* LEFT PANEL */
+.cayco-community-cta .registration-panel {
+  background: #ffffff !important;
+  border: 1px solid #e2eaf3 !important;
 }
 
-/* FINAL CTA PANEL */
-.action-panel {
-  background: linear-gradient(135deg, #12345a, #0056b3);
-  color: #ffffff;
+/* RIGHT PANEL */
+.cayco-community-cta .action-panel {
+  background: linear-gradient(135deg, #12345a, #0056b3) !important;
+  color: #ffffff !important;
 }
 
-/* SMALL SECTION LABEL */
-.cayco-cta-label {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-  color: #0056b3;
-  margin-bottom: 12px;
+/* LABELS */
+.cayco-community-cta .cayco-cta-label {
+  display: block !important;
+  color: #0056b3 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  margin-bottom: 10px !important;
 }
 
-.action-panel .cayco-cta-label {
-  color: #d9e9ff;
+.cayco-community-cta .action-panel .cayco-cta-label {
+  color: #d9e9ff !important;
 }
 
 /* HEADINGS */
-.cayco-cta-panel h2 {
-  font-size: 27px;
-  line-height: 1.3;
-  margin: 0 0 15px;
-  color: #12345a;
+.cayco-community-cta .cayco-cta-panel h2 {
+  color: #12345a !important;
+  font-size: 25px !important;
+  line-height: 1.3 !important;
+  margin: 0 0 14px !important;
 }
 
-.action-panel h2 {
-  color: #ffffff;
+.cayco-community-cta .action-panel h2 {
+  color: #ffffff !important;
 }
 
-/* PARAGRAPHS */
-.cayco-cta-panel p {
-  font-size: 15px;
-  line-height: 1.7;
-  margin: 0 0 13px;
-  color: #566273;
+/* TEXT */
+.cayco-community-cta .cayco-cta-panel p {
+  color: #566273 !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  margin: 0 0 12px !important;
 }
 
-.action-panel p {
-  color: #e8f0fb;
+.cayco-community-cta .action-panel p {
+  color: #e8f0fb !important;
 }
 
 /* BUTTONS */
-.cayco-cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background: #0056b3;
+.cayco-community-cta .cayco-cta-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 9px !important;
+  background: #0056b3 !important;
   color: #ffffff !important;
   text-decoration: none !important;
-  font-size: 15px;
-  font-weight: 700;
-  padding: 13px 22px;
-  border-radius: 7px;
-  margin-top: 8px;
-  transition: background 0.25s ease,
-              transform 0.25s ease;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 13px 20px !important;
+  margin-top: 8px !important;
+  border-radius: 7px !important;
+  transition: background 0.2s ease !important;
 }
 
-.cayco-cta-button:hover {
-  background: #003f86;
-  transform: translateY(-2px);
+.cayco-community-cta .cayco-cta-button:hover {
+  background: #003f86 !important;
 }
 
-/* LIGHT BUTTON FOR BLUE PANEL */
-.cta-button-light {
-  background: #ffffff;
+/* WHITE BUTTON ON BLUE PANEL */
+.cayco-community-cta .cta-button-light {
+  background: #ffffff !important;
   color: #12345a !important;
 }
 
-.cta-button-light:hover {
-  background: #eaf2fc;
+.cayco-community-cta .cta-button-light:hover {
+  background: #eaf2fc !important;
 }
 
-/* REGISTRATION DISCLAIMER */
-.cayco-cta-panel .cayco-cta-note {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #7a8491;
-  margin-top: 13px;
-  margin-bottom: 0;
+/* DISCLAIMER */
+.cayco-community-cta .cayco-cta-panel .cayco-cta-note {
+  color: #7a8491 !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
 }
 
-/* RESPONSIVE TABLET */
-@media (max-width: 850px) {
-  .cayco-cta-inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-
-  .cayco-cta-panel {
-    padding: 25px;
-  }
-
-  .cayco-cta-panel h2 {
-    font-size: 23px;
-  }
-}
-
-/* RESPONSIVE MOBILE */
+/* SMALL SCREEN: STILL SIDE BY SIDE */
 @media (max-width: 600px) {
-  .cayco-community-cta {
-    padding: 22px 14px;
-    margin: 20px 0;
+  .cayco-community-cta .cayco-cta-inner {
+    flex-direction: row !important;
+    gap: 10px !important;
   }
 
-  .cayco-cta-inner {
-    grid-template-columns: 1fr;
-    gap: 16px;
+  .cayco-community-cta .cayco-cta-panel {
+    padding: 16px 12px !important;
   }
 
-  .cayco-cta-panel {
-    padding: 25px 22px;
+  .cayco-community-cta .cayco-cta-panel h2 {
+    font-size: 18px !important;
   }
 
-  .cayco-cta-panel h2 {
-    font-size: 24px;
+  .cayco-community-cta .cayco-cta-panel p {
+    font-size: 12px !important;
   }
 
-  .cayco-cta-panel p {
-    font-size: 14px;
-  }
-
-  .cayco-cta-button {
-    width: 100%;
-    box-sizing: border-box;
+  .cayco-community-cta .cayco-cta-button {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 11px 8px !important;
+    font-size: 12px !important;
+    text-align: center !important;
   }
 }
 </style>
