@@ -2,732 +2,1159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Register with Charity Aid YCO</title>
+<title>Register with Charity Aid YCO</title>
 
-  <meta name="description"
-        content="Register your interest in joining Charity Aid YCO as a member, volunteer, partner, or community supporter.">
+<meta name="description"
+content="Register your interest in joining Charity Aid YCO as a member, volunteer, partner, or community supporter.">
 
-  <!-- Mailchimp Classic Form Styles -->
-  <link
-    href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css"
-    rel="stylesheet"
-    type="text/css"
-  >
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    /* =====================================
-       GENERAL PAGE STYLING
-    ===================================== */
+<link href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 
-    * {
-      box-sizing: border-box;
+<script id="mcjs">
+!function(c,h,i,m,p){
+m=c.createElement(h),p=c.getElementsByTagName(h)[0],
+m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
+}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e0b297eeb9a8f52b5777d1770/96f29b9c6e34421690daa050d.js");
+</script>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #003D99;
+    --dark-blue: #002147;
+    --green: #2E8B57;
+    --gold: #F4B400;
+    --light: #F7F9FC;
+    --white: #ffffff;
+    --dark: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F7F9FC;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* TOP BAR */
+
+.cayco-top-bar {
+    background: var(--dark-blue);
+    color: white;
+    padding: 10px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.cayco-top-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.cayco-header {
+    background: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.cayco-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.cayco-logo img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+}
+
+.cayco-logo-text {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.2;
+}
+
+.cayco-logo-text span {
+    color: var(--green);
+}
+
+/* NAVIGATION */
+
+.cayco-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 22px;
+}
+
+.cayco-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cayco-nav ul li a:hover,
+.cayco-nav ul li a.active {
+    color: var(--primary);
+}
+
+.cayco-nav .cayco-donate-btn {
+    background: var(--gold);
+    padding: 11px 22px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.cayco-nav .cayco-donate-btn:hover {
+    background: #d99f00;
+    color: white;
+}
+
+/* MOBILE MENU BUTTON */
+
+.cayco-menu-toggle {
+    display: none;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 13px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/* PAGE INTRO */
+
+.registration-hero {
+    background:
+        linear-gradient(rgba(0,33,71,0.90), rgba(0,33,71,0.90)),
+        url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.registration-hero .eyebrow {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.registration-hero h1 {
+    font-size: 42px;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.registration-hero p {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #e7edf5;
+}
+
+.registration-back {
+    display: inline-block;
+    margin-top: 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.registration-back:hover {
+    color: var(--gold);
+}
+
+/* FORM INTRO */
+
+.registration-intro {
+    max-width: 800px;
+    margin: 40px auto 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.registration-intro h2 {
+    color: var(--dark-blue);
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.registration-intro p {
+    color: #606b79;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* MAILCHIMP FORM */
+
+#mc_embed_shell {
+    width: 100%;
+    max-width: 100%;
+    margin: 25px auto 55px;
+    padding: 0 20px;
+}
+
+#mc_embed_signup {
+    background: white !important;
+    clear: both;
+    font: 15px Arial, Helvetica, sans-serif !important;
+    width: 100% !important;
+    max-width: 720px !important;
+    margin: 0 auto !important;
+    padding: 32px !important;
+    border: 1px solid #e1e8f0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(18,52,90,0.08);
+}
+
+#mc_embed_signup h2 {
+    color: #12345a;
+    font-size: 25px;
+    line-height: 1.3;
+    margin: 0 0 12px;
+    padding: 0;
+}
+
+#mc_embed_signup .form-description {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+#mc_embed_signup .indicates-required {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#mc_embed_signup .asterisk {
+    color: #d93025;
+}
+
+#mc_embed_signup .mc-field-group {
+    width: 100% !important;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    min-height: auto;
+}
+
+#mc_embed_signup .mc-field-group label {
+    display: block;
+    color: #34445a;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#mc_embed_signup .mc-field-group input[type="text"],
+#mc_embed_signup .mc-field-group input[type="email"],
+#mc_embed_signup .mc-field-group input[type="tel"],
+#mc_embed_signup .mc-field-group select,
+#mc_embed_signup .mc-field-group textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+#mc_embed_signup .mc-field-group textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+#mc_embed_signup .mc-field-group input:focus,
+#mc_embed_signup .mc-field-group select:focus,
+#mc_embed_signup .mc-field-group textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(0,86,179,0.12);
+}
+
+/* AREAS OF INTEREST */
+
+#mc_embed_signup .input-group {
+    padding-bottom: 18px;
+}
+
+#mc_embed_signup .input-group strong {
+    display: block;
+    color: #34445a;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#mc_embed_signup .input-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mc_embed_signup .input-group li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#mc_embed_signup .input-group input[type="radio"] {
+    margin: 0 9px 0 0;
+    accent-color: #0056b3;
+}
+
+#mc_embed_signup .input-group label {
+    display: inline;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* SUBMIT BUTTON */
+
+#mc_embed_signup input#mc-embedded-subscribe {
+    display: inline-block;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 14px 28px;
+    min-height: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#mc_embed_signup input#mc-embedded-subscribe:hover {
+    background: #003f86;
+}
+
+#mc_embed_signup .optionalParent {
+    margin-top: 10px;
+}
+
+#mc_embed_signup .foot {
+    width: 100%;
+}
+
+#mc_embed_signup .refferal_badge {
+    max-width: 180px !important;
+    height: auto !important;
+    margin-top: 15px !important;
+}
+
+/* FOOTER */
+
+.cayco-footer {
+    background: #00152D;
+    color: white;
+}
+
+.cayco-footer-main {
+    padding: 60px 8%;
+}
+
+.cayco-footer-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.2fr 1.3fr;
+    gap: 35px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.cayco-footer-about .cayco-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.cayco-footer-about .cayco-brand img {
+    width: 65px;
+    height: auto;
+    object-fit: contain;
+}
+
+.cayco-footer-about .cayco-brand h2 {
+    color: white;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.cayco-footer-about .cayco-brand h2 span {
+    color: var(--gold);
+}
+
+.cayco-footer-about p {
+    color: #d5deea;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.cayco-footer-column h3 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.cayco-footer-links {
+    list-style: none;
+}
+
+.cayco-footer-links li {
+    margin-bottom: 10px;
+}
+
+.cayco-footer-links a {
+    color: #d5deea;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cayco-footer-links a:hover {
+    color: var(--gold);
+    padding-left: 4px;
+}
+
+.cayco-contact-item {
+    color: #d5deea;
+    font-size: 14px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.cayco-contact-item a {
+    color: #d5deea;
+    text-decoration: none;
+}
+
+.cayco-contact-item a:hover {
+    color: var(--gold);
+}
+
+.cayco-social-title {
+    color: white;
+    font-size: 15px;
+    margin: 22px 0 12px;
+}
+
+.cayco-socials {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cayco-socials a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cayco-socials a:hover {
+    background: var(--gold);
+    color: #00152D;
+}
+
+.cayco-support-btn {
+    display: inline-block;
+    margin-top: 22px;
+    background: var(--gold);
+    color: #00152D;
+    padding: 11px 18px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cayco-support-btn:hover {
+    background: white;
+}
+
+.cayco-footer-bottom {
+    background: #000d1d;
+    padding: 22px 8%;
+    border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.cayco-footer-bottom-inner {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cayco-footer-bottom p {
+    color: #c7d2e0;
+    font-size: 12px;
+}
+
+.cayco-footer-motto {
+    color: var(--gold) !important;
+    font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1100px) {
+    .cayco-header {
+        padding: 15px 5%;
     }
 
-    body {
-      margin: 0;
-      background: #f4f7fb;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #333;
+    .cayco-nav ul {
+        gap: 14px;
     }
 
-    /* =====================================
-       HEADER
-    ===================================== */
-
-    .registration-header {
-      background: #12345a;
-      color: #ffffff;
-      padding: 24px 20px;
-      text-align: center;
+    .cayco-nav ul li a {
+        font-size: 13px;
     }
 
-    .registration-header h1 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: 700;
+    .cayco-footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .cayco-menu-toggle {
+        display: block;
     }
 
-    .registration-header p {
-      margin: 8px 0 0;
-      font-size: 14px;
-      color: #e5edf7;
+    .cayco-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        padding: 15px 5%;
     }
 
-    /* =====================================
-       INTRODUCTION
-    ===================================== */
+    .cayco-nav.show {
+        display: block;
+    }
+
+    .cayco-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .cayco-nav ul li {
+        margin: 0;
+    }
+
+    .cayco-nav ul li a {
+        display: block;
+        padding: 12px 5px;
+        font-size: 15px;
+    }
+
+    .cayco-nav .cayco-donate-btn {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .registration-hero h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cayco-top-bar {
+        padding: 9px 4%;
+        font-size: 11px;
+        gap: 10px;
+    }
+
+    .cayco-header {
+        padding: 12px 4%;
+    }
+
+    .cayco-logo {
+        gap: 8px;
+    }
+
+    .cayco-logo img {
+        height: 48px;
+    }
+
+    .cayco-logo-text {
+        font-size: 18px;
+    }
+
+    .registration-hero {
+        padding: 45px 6%;
+    }
+
+    .registration-hero h1 {
+        font-size: 28px;
+    }
+
+    .registration-hero p {
+        font-size: 14px;
+    }
 
     .registration-intro {
-      max-width: 760px;
-      margin: 35px auto 20px;
-      padding: 0 20px;
-      text-align: center;
+        margin: 30px auto 15px;
+        padding: 0 16px;
     }
 
     .registration-intro h2 {
-      color: #12345a;
-      font-size: 30px;
-      line-height: 1.3;
-      margin: 0 0 15px;
+        font-size: 23px;
     }
 
     .registration-intro p {
-      color: #5b6572;
-      font-size: 16px;
-      line-height: 1.7;
-      margin: 0 0 15px;
+        font-size: 14px;
     }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 8px;
-      color: #0056b3;
-      font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
-    }
-
-    /* =====================================
-       MAILCHIMP FORM CONTAINER
-    ===================================== */
 
     #mc_embed_shell {
-      width: 100%;
-      max-width: 100%;
-      margin: 30px auto;
-      padding: 0 20px;
+        padding: 0 12px;
+        margin: 20px auto 35px;
     }
 
     #mc_embed_signup {
-      background: #ffffff !important;
-      clear: both;
-      font: 15px Arial, Helvetica, sans-serif !important;
-
-      width: 100% !important;
-      max-width: 720px !important;
-
-      margin: 0 auto !important;
-      padding: 32px !important;
-
-      border: 1px solid #e1e8f0;
-      border-radius: 12px;
-
-      box-shadow: 0 5px 20px rgba(18, 52, 90, 0.08);
+        padding: 22px 18px !important;
     }
-
-    /* Form heading */
 
     #mc_embed_signup h2 {
-      color: #12345a;
-      font-size: 25px;
-      line-height: 1.3;
-      margin: 0 0 12px;
-      padding: 0;
+        font-size: 22px;
     }
-
-    #mc_embed_signup .form-description {
-      color: #667085;
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 22px;
-    }
-
-    /* Required field notice */
-
-    #mc_embed_signup .indicates-required {
-      font-size: 12px;
-      color: #777;
-      margin-bottom: 20px;
-    }
-
-    #mc_embed_signup .asterisk {
-      color: #d93025;
-    }
-
-    /* =====================================
-       FORM FIELDS
-    ===================================== */
-
-    #mc_embed_signup .mc-field-group {
-      width: 100% !important;
-      padding-bottom: 15px;
-      margin-bottom: 5px;
-      min-height: auto;
-    }
-
-    #mc_embed_signup .mc-field-group label {
-      display: block;
-      color: #34445a;
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    #mc_embed_signup .mc-field-group input[type="text"],
-    #mc_embed_signup .mc-field-group input[type="email"],
-    #mc_embed_signup .mc-field-group input[type="tel"],
-    #mc_embed_signup .mc-field-group select {
-      width: 100% !important;
-      max-width: 100% !important;
-
-      min-height: 44px;
-      padding: 10px 12px;
-
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-
-      background: #ffffff;
-      color: #333;
-
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-
-      margin: 0;
-    }
-
-    #mc_embed_signup .mc-field-group input:focus,
-    #mc_embed_signup .mc-field-group select:focus {
-      outline: none;
-      border-color: #0056b3;
-      box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.12);
-    }
-
-    /* =====================================
-       AREAS OF INTEREST
-    ===================================== */
-
-    #mc_embed_signup .input-group {
-      padding-bottom: 18px;
-    }
-
-    #mc_embed_signup .input-group strong {
-      display: block;
-      color: #34445a;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    #mc_embed_signup .input-group ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    #mc_embed_signup .input-group li {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    #mc_embed_signup .input-group input[type="radio"] {
-      margin: 0 9px 0 0;
-      accent-color: #0056b3;
-    }
-
-    #mc_embed_signup .input-group label {
-      display: inline;
-      font-weight: 400;
-      margin: 0;
-      cursor: pointer;
-    }
-
-    /* =====================================
-       SUBMIT BUTTON
-    ===================================== */
 
     #mc_embed_signup input#mc-embedded-subscribe {
-      display: inline-block;
-
-      background: #0056b3;
-      color: #ffffff;
-
-      border: none;
-      border-radius: 7px;
-
-      padding: 14px 28px;
-      min-height: 46px;
-
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-
-      cursor: pointer;
-      transition: background 0.2s ease;
-    }
-
-    #mc_embed_signup input#mc-embedded-subscribe:hover {
-      background: #003f86;
-    }
-
-    /* Remove unnecessary spacing around submit area */
-
-    #mc_embed_signup .optionalParent {
-      margin-top: 10px;
-    }
-
-    #mc_embed_signup .foot {
-      width: 100%;
-    }
-
-    /* Mailchimp badge */
-
-    #mc_embed_signup .refferal_badge {
-      max-width: 180px !important;
-      height: auto !important;
-      margin-top: 15px !important;
-    }
-
-    /* =====================================
-       FOOTER
-    ===================================== */
-
-    .registration-footer {
-      text-align: center;
-      padding: 25px 15px;
-      color: #777;
-      font-size: 13px;
-      line-height: 1.7;
-    }
-
-    .registration-footer a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-
-    /* =====================================
-       MOBILE RESPONSIVE DESIGN
-    ===================================== */
-
-    @media (max-width: 600px) {
-
-      .registration-header {
-        padding: 20px 15px;
-      }
-
-      .registration-header h1 {
-        font-size: 24px;
-      }
-
-      .registration-intro {
-        margin: 25px auto 15px;
-        padding: 0 16px;
-      }
-
-      .registration-intro h2 {
-        font-size: 24px;
-      }
-
-      .registration-intro p {
-        font-size: 14px;
-      }
-
-      #mc_embed_shell {
-        padding: 0 12px;
-        margin: 20px auto;
-      }
-
-      #mc_embed_signup {
-        padding: 22px 18px !important;
-      }
-
-      #mc_embed_signup h2 {
-        font-size: 22px;
-      }
-
-      #mc_embed_signup input#mc-embedded-subscribe {
         width: 100%;
-      }
     }
-  </style>
+
+    .cayco-footer-main {
+        padding: 40px 6%;
+    }
+
+    .cayco-footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cayco-footer-bottom-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
 </head>
 
 <body>
 
-  <!-- =====================================
-       HEADER
-  ===================================== -->
+<!-- TOP BAR -->
 
-  <header class="registration-header">
-    <h1>Charity Aid YCO</h1>
-    <p>Empowering Communities, Transforming Lives</p>
-  </header>
+<div class="cayco-top-bar">
+    <div>
+        <a href="mailto:charityaidyco@gmail.com">charityaidyco@gmail.com</a>
+    </div>
+    <div>
+        <a href="tel:+254104380231">+254 104 380 231</a>
+    </div>
+</div>
 
-  <!-- =====================================
-       INTRODUCTION
-  ===================================== -->
+<!-- WEBSITE HEADER -->
 
-  <section class="registration-intro">
+<header class="cayco-header">
 
-    <h2>Membership &amp; Volunteer Registration</h2>
-
-    <p>
-      Thank you for your interest in joining Charity Aid YCO.
-      Please complete the form below to tell us about yourself,
-      your interests, and how you would like to contribute
-      to our community.
-    </p>
-
-    <a href="Community.html" class="back-link">
-      &larr; Back to Community
+    <a href="index.html" class="cayco-logo">
+        <img src="logo.jpg" alt="Charity Aid YCO Logo">
+        <div class="cayco-logo-text">
+            Charity Aid <span>YCO</span>
+        </div>
     </a>
 
-  </section>
+    <button
+        class="cayco-menu-toggle"
+        id="caycoMenuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="caycoMainNav">
+        ☰
+    </button>
 
-  <!-- =====================================
-       MAILCHIMP REGISTRATION FORM
-  ===================================== -->
+    <nav class="cayco-nav" id="caycoMainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Programs.html">Programs</a></li>
+            <li><a href="Community.html">Community</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="donate.html" class="cayco-donate-btn">Donate</a></li>
+        </ul>
+    </nav>
 
-  <div id="mc_embed_shell">
+</header>
+
+<!-- REGISTRATION HERO -->
+
+<section class="registration-hero">
+
+    <div class="eyebrow">GET INVOLVED</div>
+
+    <h1>Membership &amp; Volunteer Registration</h1>
+
+    <p>
+        Become part of a community committed to empowering people
+        and transforming lives. Register your interest in joining
+        Charity Aid YCO as a member, volunteer, community supporter,
+        or partner.
+    </p>
+
+    <a href="Community.html" class="registration-back">
+        ← Back to Community
+    </a>
+
+</section>
+
+<!-- FORM INTRODUCTION -->
+
+<section class="registration-intro">
+
+    <h2>Join Charity Aid YCO</h2>
+
+    <p>
+        Please complete the form below to tell us about yourself,
+        your interests, and how you would like to contribute
+        to our community.
+    </p>
+
+</section>
+
+<!-- MAILCHIMP REGISTRATION FORM -->
+
+<div id="mc_embed_shell">
 
     <div id="mc_embed_signup">
 
-      <form
-        action="https://charityaidyco.us22.list-manage.com/subscribe/post?u=e0b297eeb9a8f52b5777d1770&amp;id=a87bd7461b&amp;f_id=008cc2e1f0"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        class="validate"
-        target="_self"
-      >
+        <form
+            action="https://charityaidyco.us22.list-manage.com/subscribe/post?u=e0b297eeb9a8f52b5777d1770&amp;id=a87bd7461b&amp;f_id=008cc2e1f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_self">
 
-        <div id="mc_embed_signup_scroll">
+            <div id="mc_embed_signup_scroll">
 
-          <h2>Join Charity Aid YCO</h2>
+                <h2>Registration Form</h2>
 
-          <p class="form-description">
-            Complete the registration form below to express
-            your interest in becoming part of our community.
-          </p>
+                <p class="form-description">
+                    Fields marked with an asterisk are required.
+                </p>
 
-          <div class="indicates-required">
-            <span class="asterisk">*</span> indicates required
-          </div>
+                <div class="indicates-required">
+                    <span class="asterisk">*</span> indicates required
+                </div>
 
-          <!-- EMAIL -->
+                <!-- EMAIL -->
 
-          <div class="mc-field-group">
-            <label for="mce-EMAIL">
-              Email Address <span class="asterisk">*</span>
-            </label>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">
+                        Email Address <span class="asterisk">*</span>
+                    </label>
+                    <input
+                        type="email"
+                        name="EMAIL"
+                        class="required email"
+                        id="mce-EMAIL"
+                        required>
+                </div>
 
-            <input
-              type="email"
-              name="EMAIL"
-              class="required email"
-              id="mce-EMAIL"
-              required
-            >
-          </div>
+                <!-- FIRST NAME -->
 
-          <!-- FIRST NAME -->
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">First Name</label>
+                    <input type="text" name="FNAME" id="mce-FNAME">
+                </div>
 
-          <div class="mc-field-group">
-            <label for="mce-FNAME">First Name</label>
+                <!-- LAST NAME -->
 
-            <input
-              type="text"
-              name="FNAME"
-              id="mce-FNAME"
-            >
-          </div>
+                <div class="mc-field-group">
+                    <label for="mce-LNAME">Last Name</label>
+                    <input type="text" name="LNAME" id="mce-LNAME">
+                </div>
 
-          <!-- LAST NAME -->
+                <!-- PHONE -->
 
-          <div class="mc-field-group">
-            <label for="mce-LNAME">Last Name</label>
+                <div class="mc-field-group">
+                    <label for="mce-PHONE">Phone Number</label>
+                    <input
+                        type="tel"
+                        name="PHONE"
+                        id="mce-PHONE"
+                        placeholder="+254 7XX XXX XXX">
+                </div>
 
-            <input
-              type="text"
-              name="LNAME"
-              id="mce-LNAME"
-            >
-          </div>
+                <!-- ORGANIZATION -->
 
-          <!-- PHONE -->
+                <div class="mc-field-group">
+                    <label for="mce-COMPANY">Organization / Company</label>
+                    <input type="text" name="COMPANY" id="mce-COMPANY">
+                </div>
 
-          <div class="mc-field-group">
-            <label for="mce-PHONE">Phone Number</label>
+                <!-- OCCUPATION -->
 
-            <input
-              type="tel"
-              name="PHONE"
-              id="mce-PHONE"
-              placeholder="+254 7XX XXX XXX"
-            >
-          </div>
+                <div class="mc-field-group">
+                    <label for="mce-WORK">Occupation</label>
+                    <input type="text" name="WORK" id="mce-WORK">
+                </div>
 
-          <!-- ORGANIZATION -->
+                <!-- MEMBERSHIP CATEGORY -->
 
-          <div class="mc-field-group">
-            <label for="mce-COMPANY">
-              Organization / Company
-            </label>
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE8">Membership Category</label>
 
-            <input
-              type="text"
-              name="COMPANY"
-              id="mce-COMPANY"
-            >
-          </div>
+                    <select name="MMERGE8" id="mce-MMERGE8">
+                        <option value="">Select a category</option>
+                        <option value="Founding Member">Founding Member</option>
+                        <option value="Ordinary Membership">Ordinary Membership</option>
+                        <option value="Partner/Donor">Partner / Donor</option>
+                        <option value="Community Supporter">Community Supporter</option>
+                    </select>
+                </div>
 
-          <!-- OCCUPATION -->
+                <!-- AREAS OF INTEREST -->
 
-          <div class="mc-field-group">
-            <label for="mce-WORK">Occupation</label>
+                <div class="mc-field-group input-group">
 
-            <input
-              type="text"
-              name="WORK"
-              id="mce-WORK"
-            >
-          </div>
+                    <strong>Areas of Interest</strong>
 
-          <!-- MEMBERSHIP CATEGORY -->
+                    <ul>
+                        <li>
+                            <input type="radio" name="MMERGE9" id="interest-youth" value="Youth Empowerment">
+                            <label for="interest-youth">Youth Empowerment</label>
+                        </li>
 
-          <div class="mc-field-group">
-            <label for="mce-MMERGE8">
-              Membership Category
-            </label>
+                        <li>
+                            <input type="radio" name="MMERGE9" id="interest-education" value="Education">
+                            <label for="interest-education">Education</label>
+                        </li>
 
-            <select name="MMERGE8" id="mce-MMERGE8">
+                        <li>
+                            <input type="radio" name="MMERGE9" id="interest-community" value="Community Development">
+                            <label for="interest-community">Community Development</label>
+                        </li>
 
-              <option value="">Select a category</option>
+                        <li>
+                            <input type="radio" name="MMERGE9" id="interest-gender" value="Gender Equality">
+                            <label for="interest-gender">Gender Equality</label>
+                        </li>
 
-              <option value="Founding Member">
-                Founding Member
-              </option>
+                        <li>
+                            <input type="radio" name="MMERGE9" id="interest-health" value="Health Programs">
+                            <label for="interest-health">Health Programs</label>
+                        </li>
 
-              <option value="Ordinary Membership">
-                Ordinary Membership
-              </option>
+                        <li>
+                            <input type="radio" name="MMERGE9" id="interest-fundraising" value="Fundraising & Donation">
+                            <label for="interest-fundraising">Fundraising &amp; Donation</label>
+                        </li>
 
-              <option value="Partner/ Donor">
-                Partner / Donor
-              </option>
+                        <li>
+                            <input type="radio" name="MMERGE9" id="interest-business" value="Entrepreneurship">
+                            <label for="interest-business">Entrepreneurship</label>
+                        </li>
 
-              <option value="Community Supporter">
-                Community Supporter
-              </option>
+                        <li>
+                            <input type="radio" name="MMERGE9" id="interest-digital" value="Digital Skills">
+                            <label for="interest-digital">Digital Skills</label>
+                        </li>
+                    </ul>
 
-            </select>
-          </div>
+                </div>
 
-          <!-- AREAS OF INTEREST -->
+                <!-- REASON FOR JOINING -->
 
-          <div class="mc-field-group input-group">
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE10">
+                        Why do you wish to join Charity Aid YCO?
+                    </label>
 
-            <strong>Areas of Interest</strong>
+                    <textarea
+                        name="MMERGE10"
+                        id="mce-MMERGE10"
+                        placeholder="Tell us why you would like to join or how you would like to contribute."></textarea>
+                </div>
 
-            <ul>
+                <!-- MAILCHIMP RESPONSES -->
 
-              <li>
-                <input
-                  type="radio"
-                  name="MMERGE9"
-                  id="mce-MMERGE90"
-                  value="Youth Empowerment"
-                >
-                <label for="mce-MMERGE90">
-                  Youth Empowerment
-                </label>
-              </li>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none;"></div>
+                    <div class="response" id="mce-success-response" style="display:none;"></div>
+                </div>
 
-              <li>
-                <input
-                  type="radio"
-                  name="MMERGE9"
-                  id="mce-MMERGE91"
-                  value="Education"
-                >
-                <label for="mce-MMERGE91">
-                  Education
-                </label>
-              </li>
+                <!-- MAILCHIMP BOT PROTECTION: DO NOT REMOVE -->
 
-              <li>
-                <input
-                  type="radio"
-                  name="MMERGE9"
-                  id="mce-MMERGE92"
-                  value="Community Development"
-                >
-                <label for="mce-MMERGE92">
-                  Community Development
-                </label>
-              </li>
+                <div aria-hidden="true" style="position:absolute; left:-5000px;">
+                    <input
+                        type="text"
+                        name="b_e0b297eeb9a8f52b5777d1770_a87bd7461b"
+                        tabindex="-1"
+                        value="">
+                </div>
 
-              <li>
-                <input
-                  type="radio"
-                  name="MMERGE9"
-                  id="mce-MMERGE93"
-                  value="Gender Equality"
-                >
-                <label for="mce-MMERGE93">
-                  Gender Equality
-                </label>
-              </li>
+                <!-- SUBMIT -->
 
-              <li>
-                <input
-                  type="radio"
-                  name="MMERGE9"
-                  id="mce-MMERGE94"
-                  value="Health Programs"
-                >
-                <label for="mce-MMERGE94">
-                  Health Programs
-                </label>
-              </li>
+                <div class="optionalParent">
+                    <div class="clear foot">
 
-              <li>
-                <input
-                  type="radio"
-                  name="MMERGE9"
-                  id="mce-MMERGE95"
-                  value="Fundraising &amp; Donation"
-                >
-                <label for="mce-MMERGE95">
-                  Fundraising &amp; Donation
-                </label>
-              </li>
+                        <input
+                            type="submit"
+                            name="subscribe"
+                            id="mc-embedded-subscribe"
+                            class="button"
+                            value="Submit Registration">
 
-              <li>
-                <input
-                  type="radio"
-                  name="MMERGE9"
-                  id="mce-MMERGE96"
-                  value="Entrepreneurship"
-                >
-                <label for="mce-MMERGE96">
-                  Entrepreneurship
-                </label>
-              </li>
+                        <p style="margin:15px 0 0;">
+                            <a
+                                href="http://eepurl.com/Tg540FAFUw"
+                                title="Mailchimp - email marketing made easy and fun">
+                                <img
+                                    class="refferal_badge"
+                                    src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                                    alt="Intuit Mailchimp"
+                                    style="width:180px;height:auto;">
+                            </a>
+                        </p>
 
-              <li>
-                <input
-                  type="radio"
-                  name="MMERGE9"
-                  id="mce-MMERGE97"
-                  value="Digital Skills"
-                >
-                <label for="mce-MMERGE97">
-                  Digital Skills
-                </label>
-              </li>
+                    </div>
+                </div>
 
-            </ul>
-          </div>
+            </div>
+        </form>
+    </div>
+</div>
 
-          <!-- REASON FOR JOINING -->
+<!-- STANDARD FOOTER -->
 
-          <div class="mc-field-group">
-            <label for="mce-MMERGE10">
-              Why do you wish to join Charity Aid YCO?
-            </label>
+<footer class="cayco-footer">
 
-            <input
-              type="text"
-              name="MMERGE10"
-              id="mce-MMERGE10"
-            >
-          </div>
+    <div class="cayco-footer-main">
 
-          <!-- HIDDEN MAILCHIMP RESPONSES -->
+        <div class="cayco-footer-container">
 
-          <div id="mce-responses" class="clear">
-            <div
-              class="response"
-              id="mce-error-response"
-              style="display:none;"
-            ></div>
+            <!-- ABOUT -->
 
-            <div
-              class="response"
-              id="mce-success-response"
-              style="display:none;"
-            ></div>
-          </div>
+            <div class="cayco-footer-about">
 
-          <!-- MAILCHIMP BOT PROTECTION: DO NOT REMOVE -->
-
-          <div
-            aria-hidden="true"
-            style="position:absolute; left:-5000px;"
-          >
-            <input
-              type="text"
-              name="b_e0b297eeb9a8f52b5777d1770_a87bd7461b"
-              tabindex="-1"
-              value=""
-            >
-          </div>
-
-          <!-- SUBMIT -->
-
-          <div class="optionalParent">
-
-            <div class="clear foot">
-
-              <input
-                type="submit"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                class="button"
-                value="Submit Registration"
-              >
-
-              <!-- MAILCHIMP BRANDING -->
-
-              <p style="margin: 15px 0 0;">
-                <a
-                  href="http://eepurl.com/Tg540FAFUw"
-                  title="Mailchimp - email marketing made easy and fun"
-                >
-                  <img
-                    class="refferal_badge"
-                    src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                    alt="Intuit Mailchimp"
-                    style="width:180px; height:auto;"
-                  >
+                <a href="index.html" class="cayco-brand">
+                    <img src="logo.jpg" alt="Charity Aid YCO Logo">
+                    <h2>Charity Aid <span>YCO</span></h2>
                 </a>
-              </p>
+
+                <p>
+                    Empowering Communities, Transforming Lives through
+                    sustainable development, social justice, education,
+                    health, environmental stewardship and economic
+                    empowerment.
+                </p>
 
             </div>
 
-          </div>
+            <!-- QUICK LINKS -->
+
+            <div class="cayco-footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul class="cayco-footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Programs.html">Our Programs</a></li>
+                    <li><a href="Community.html">Community</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                </ul>
+
+            </div>
+
+            <!-- FOCUS AREAS -->
+
+            <div class="cayco-footer-column">
+
+                <h3>Our Focus Areas</h3>
+
+                <ul class="cayco-footer-links">
+                    <li><a href="Programs.html">Economic Empowerment</a></li>
+                    <li><a href="Programs.html">Education Support</a></li>
+                    <li><a href="Programs.html">Health &amp; Wellbeing</a></li>
+                    <li><a href="Programs.html">Environmental Sustainability</a></li>
+                    <li><a href="Programs.html">Humanitarian Assistance</a></li>
+                    <li><a href="Programs.html">Social Justice &amp; Inclusion</a></li>
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="cayco-footer-column">
+
+                <h3>Contact Information</h3>
+
+                <div class="cayco-contact-item">Kenya</div>
+
+                <div class="cayco-contact-item">
+                    ✉
+                    <a href="mailto:charityaidyco@gmail.com">
+                        charityaidyco@gmail.com
+                    </a>
+                </div>
+
+                <div class="cayco-contact-item">
+                    ☎
+                    <a href="tel:+254104380231">
+                        +254 104 380 231
+                    </a>
+                </div>
+
+                <h4 class="cayco-social-title">Follow Us</h4>
+
+                <div class="cayco-socials">
+
+                    <a href="https://www.facebook.com/profile.php?id=61596622811157"
+                       aria-label="Facebook">f</a>
+
+                    <a href="https://www.linkedin.com/company/charity-aid-yco/about/?viewAsMember=true"
+                       aria-label="LinkedIn">in</a>
+
+                    <a href="#"
+                       aria-label="Instagram">◎</a>
+
+                    <a href="#"
+                       aria-label="X">𝕏</a>
+
+                </div>
+
+                <a href="donate.html" class="cayco-support-btn">
+                    Support Our Mission →
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="cayco-footer-bottom">
+
+        <div class="cayco-footer-bottom-inner">
+
+            <p>
+                © <span id="caycoYear"></span>
+                Charity Aid YCO. All Rights Reserved.
+            </p>
+
+            <p class="cayco-footer-motto">
+                Empowering Communities, Transforming Lives.
+            </p>
+
+            <p>Building Hope. Creating Opportunities.</p>
 
         </div>
 
-      </form>
-
     </div>
 
-  </div>
+</footer>
 
-  <!-- =====================================
-       FOOTER
-  ===================================== -->
+<!-- PAGE JAVASCRIPT -->
 
-  <footer class="registration-footer">
+<script>
+/* MOBILE NAVIGATION */
 
-    &copy; 2026 Charity Aid YCO. All rights reserved.
+const menuToggle = document.getElementById("caycoMenuToggle");
+const mainNav = document.getElementById("caycoMainNav");
 
-    <br>
+menuToggle.addEventListener("click", function () {
 
-    Contact:
-    <a href="mailto:charityaidyco@gmail.com">
-      charityaidyco@gmail.com
-    </a>
+    mainNav.classList.toggle("show");
 
-  </footer>
+    const expanded = mainNav.classList.contains("show");
+
+    menuToggle.setAttribute("aria-expanded", expanded);
+    menuToggle.innerHTML = expanded ? "&times;" : "☰";
+
+});
+
+/* CLOSE MOBILE MENU AFTER SELECTING A LINK */
+
+mainNav.querySelectorAll("a").forEach(function (link) {
+
+    link.addEventListener("click", function () {
+        mainNav.classList.remove("show");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = "☰";
+    });
+
+});
+
+/* COPYRIGHT YEAR */
+
+document.getElementById("caycoYear").textContent =
+    new Date().getFullYear();
+</script>
 
 </body>
 </html>
